@@ -33,6 +33,7 @@ height: 100vh;
     66% { color: green; }
     100% { color: pink; }
 }
+
 `;
 
 const Text = styled.span`

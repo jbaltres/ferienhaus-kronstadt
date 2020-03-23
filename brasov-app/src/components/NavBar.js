@@ -13,33 +13,37 @@ const Title = styled.header`
   border-style: solid;
   border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;
   z-index: 400;
+  justify-content: space-around;
 `;
 
-const NavigationText = styled.h1`
+const NavigationText = styled.span`
   font-size: 25px;
   color: rgb(0, 195, 238);
   flex-grow: 1;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  font-family: -apple-system, BShitMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 `;
 
+const Shit = styled(Link)`
+text-decoration: none;
+`;
 
 function NavBar() {
   return (
     <Title>
-      <Link to="/home">
+      <Shit to="/home">
         <NavigationText>Home</NavigationText>
-      </Link>   
-      <Link to="/zimmer">
+      </Shit>   
+      <Shit to="/zimmer">
         <NavigationText>Zimmer</NavigationText>
-      </Link>     
-      <Link to="/preise">
+      </Shit>     
+      <Shit to="/preise">
         <NavigationText>Preise</NavigationText>
-      </Link> 
-      <Link to="/aboutkronstadt">
+      </Shit> 
+      <Shit to="/aboutkronstadt">
         <NavigationText>Über Kronstadt</NavigationText> 
-      </Link>
+      </Shit>
     </Title>
   );
 }
