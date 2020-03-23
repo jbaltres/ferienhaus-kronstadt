@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from 'styled-components'
 import './App.css';
+import NavBar from "./components/NavBar";
+import HeaderCaroussel from './components/MainImageSlider';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Aboutkronstadt from "./pages/AboutKronstadt";
+import Home from "./pages/Home";
+import Preise from "./pages/Preise";
+import Zimmer from "./pages/Zimmer";
 
 const Background = styled.div`
 background: papayawhip;
@@ -56,12 +63,19 @@ font-size: 80px;
 
 function App() {
   return (
+<Router>
+    <HeaderCaroussel></HeaderCaroussel>
+    <NavBar></NavBar>    
     <Background>
-    <Text>Hello Family Baltres & Brickwede
-    </Text>
-    <h2>Morgen feiern wir Weihnachten 🎅🏽</h2> 
+    <Route path="/home" component={Home} />
+    <Route path="/preise" component={Preise} />
+    <Route path="/zimmer" component={Zimmer} />
+    <Route path="/aboutkronstadt" component={Aboutkronstadt} />
     </Background>
+</Router>
   );
 }
 
 export default App;
+
+        
