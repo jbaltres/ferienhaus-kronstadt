@@ -65,7 +65,7 @@ font-size: 80px;
 function App() {
   return (
 <Router>
-    <HeaderCaroussel></HeaderCaroussel>
+    
     <NavBar></NavBar>    
     <Background>
     <Route path="/home" component={Home} />
