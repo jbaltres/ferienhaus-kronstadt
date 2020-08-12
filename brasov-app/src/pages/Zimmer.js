@@ -43,7 +43,7 @@ export default function Home() {
   <DescriptionText>Hóla </DescriptionText>
   </Card>
   <Card>
-    <Image src="https://a0.muscache.com/im/pictures/0010b431-bdca-40fc-8003-9d0063c3627b.jpg?aki_policy=xx_large"></Image>
+    <Image src="https://urlaub-in-rumänien.de/wp-content/uploads/2017/02/3240px-Brasov_Piata_Sfatului.jpg"></Image>
     <DescriptionText>Hóla </DescriptionText>
   </Card>
  </> 

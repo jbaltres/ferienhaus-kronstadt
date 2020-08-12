@@ -8,6 +8,7 @@ import Aboutkronstadt from "./pages/AboutKronstadt";
 import Home from "./pages/Home";
 import Preise from "./pages/Preise";
 import Zimmer from "./pages/Zimmer";
+import MainImage from './components/MainImage';
 
 const Background = styled.div`
 background: papayawhip;
@@ -65,7 +66,7 @@ font-size: 80px;
 function App() {
   return (
 <Router>
-    
+    <MainImage></MainImage>
     <NavBar></NavBar>    
     <Background>
     <Route path="/home" component={Home} />
