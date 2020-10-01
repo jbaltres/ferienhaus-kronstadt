@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Slider from "../components/Slider";
 
 const Site = styled.div`
+background: papayawhip;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -20,7 +21,7 @@ list-style: none;
   color: white;
   background: ${props => props.bgcolor || "yellow"};
   position: relative;
-  width: 250px; /* width of each table */
+  width: 350px; /* width of each table */
   margin-right: 30px; /* spacing between tables */
   margin-bottom: 1em;
   transition: all .5s;
@@ -48,24 +49,42 @@ const LiTitle = styled.li`
 `;
 
 const LinkButton = styled.button`
-    background: white;
+    background: #3F7FBF;
     text-decoration: none;
     padding: 10px;
     display: inline-block;
     max-width: 150px
     margin: 10px auto;
     border-radius: 5px;
-    color: navy;
     text-transform: uppercase;
+    border: none;
 
     :hover{
-        transform: none;
-        box-shadow: none;
+        transform: 1.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 256, 0, 0.8), 0 6px 20px 0 rgba(0, 256, 0, 0.6);
+    }
+`;
+
+const LinkButton2 = styled.button`
+    background: #FA7268;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    max-width: 150px
+    margin: 10px auto;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+
+    :hover{
+        transform: 1.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 256, 0, 0.8), 0 6px 20px 0 rgba(0, 256, 0, 0.6);
     }
 `;
 
 const Anker = styled.a`
-text-decoration: none
+text-decoration: none;
+color: white
 `;
 
 
@@ -94,11 +113,11 @@ export default function Home() {
                 <ListItem><b>Bath:</b>Private</ListItem>
                 <ListItem><b>Netflix:</b>✔️</ListItem>
                 <ListItem><b>Price:</b>50€ / Night</ListItem>
-                    <LinkButton> 
+                    <LinkButton2> 
                         <Anker href="http://www.airbnb.com">Hier Verfügbarkeit überprüfen und buchen</Anker>
-                    </LinkButton>            
+                    </LinkButton2>            
             </Pricing>
-            <Pricing bgcolor="#993399">
+            <Pricing bgcolor="#FA7268">
               <Slider></Slider>
                 <LiTitle>Garsoniera</LiTitle>
                 <ListItem><b>Persons:</b>1-2</ListItem>

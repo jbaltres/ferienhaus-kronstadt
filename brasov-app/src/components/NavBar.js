@@ -13,6 +13,7 @@ const Title = styled.header`
   border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;
   z-index: 400;
   justify-content: space-around;
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;

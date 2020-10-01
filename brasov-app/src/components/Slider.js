@@ -4,12 +4,13 @@ import styled from "styled-components";
 
 const QuaderBox = styled.div`
 display: flex;
-justify-content: center
+justify-content: center;
+border-radius: 5px
 `;
 
 const Quader = styled.img`
-width: 50%;
-height: 90px;
+width: 60%;
+height: 150px;
 background: red;
 display: flex;
 align-items: center;
