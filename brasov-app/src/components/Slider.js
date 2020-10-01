@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Carousel from "react-elastic-carousel"
 
 
 const QuaderBox = styled.div`
@@ -20,8 +21,13 @@ margin: 10px
 
 export default function Slider() {
   return (
-    <QuaderBox> 
-        <Quader src="https://a0.muscache.com/im/pictures/62c9cb76-c15d-44a2-bea2-52d36a82dbc6.jpg?aki_policy=xx_large"></Quader>
-    </QuaderBox>   
+    <Carousel>
+       <QuaderBox> 
+          <Quader src="https://a0.muscache.com/im/pictures/62c9cb76-c15d-44a2-bea2-52d36a82dbc6.jpg?aki_policy=xx_large"></Quader>
+        </QuaderBox> 
+        <QuaderBox> 
+          <Quader src="https://a0.muscache.com/im/pictures/62c9cb76-c15d-44a2-bea2-52d36a82dbc6.jpg?aki_policy=xx_large"></Quader>
+        </QuaderBox> 
+    </Carousel>  
   )
 }
