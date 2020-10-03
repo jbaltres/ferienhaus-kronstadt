@@ -94,12 +94,12 @@ export default function Home() {
             <Pricing bgcolor="#FA7268">
               <Slider></Slider>
                 <LiTitle>App I</LiTitle>
-                    <ListItem><b>Persons:</b>2-4</ListItem>
-                    <ListItem><b>Rooms:</b>2</ListItem>
-                    <ListItem><b>Kitchen:</b>Yes</ListItem>
-                    <ListItem><b>Bath:</b>Private</ListItem>
-                    <ListItem><b>Netflix:</b>✔️</ListItem>
-                    <ListItem><b>Price:</b>40€ / Night</ListItem>
+                    <ListItem><b>Persons:</b> 2-4</ListItem>
+                    <ListItem><b>Rooms:</b> 2</ListItem>
+                    <ListItem><b>Kitchen:</b> Yes</ListItem>
+                    <ListItem><b>Bath:</b> Private</ListItem>
+                    <ListItem><b>Netflix:</b> ✔️</ListItem>
+                    <ListItem><b>Price:</b> 40€ / Night</ListItem>
                         <LinkButton> 
                             <Anker href="http://www.airbnb.com">Hier Verfügbarkeit überprüfen und buchen</Anker>
                         </LinkButton>
@@ -107,12 +107,12 @@ export default function Home() {
             <Pricing bgcolor="#3F7FBF">
               <Slider></Slider>
                 <LiTitle>App II</LiTitle>
-                <ListItem><b>Persons:</b>2-4</ListItem>
-                <ListItem><b>Rooms:</b>2</ListItem>
-                <ListItem><b>Kitchen:</b>Yes</ListItem>
-                <ListItem><b>Bath:</b>Private</ListItem>
-                <ListItem><b>Netflix:</b>✔️</ListItem>
-                <ListItem><b>Price:</b>50€ / Night</ListItem>
+                <ListItem><b>Persons:</b> 2-4</ListItem>
+                <ListItem><b>Rooms:</b> 2</ListItem>
+                <ListItem><b>Kitchen:</b> Yes</ListItem>
+                <ListItem><b>Bath:</b> Private</ListItem>
+                <ListItem><b>Netflix:</b> ✔️</ListItem>
+                <ListItem><b>Price:</b> 50€ / Night</ListItem>
                     <LinkButton2> 
                         <Anker href="http://www.airbnb.com">Hier Verfügbarkeit überprüfen und buchen</Anker>
                     </LinkButton2>            
@@ -120,12 +120,12 @@ export default function Home() {
             <Pricing bgcolor="#FA7268">
               <Slider></Slider>
                 <LiTitle>Garsoniera</LiTitle>
-                <ListItem><b>Persons:</b>1-2</ListItem>
-                <ListItem><b>Rooms:</b>1</ListItem>
-                <ListItem><b>Kitchen:</b>No (Waterboiler and Coffeemaker inside)</ListItem>
-                <ListItem><b>Bath:</b>Private</ListItem>
-                <ListItem><b>Netflix:</b>✔️</ListItem>
-                <ListItem><b>Price:</b>30€ / Night</ListItem>
+                <ListItem><b>Persons:</b> 1-2</ListItem>
+                <ListItem><b>Rooms:</b> 1</ListItem>
+                <ListItem><b>Kitchen:</b> No (Waterboiler and Coffeemaker inside)</ListItem>
+                <ListItem><b>Bath:</b> Private</ListItem>
+                <ListItem><b>Netflix:</b> ✔️</ListItem>
+                <ListItem><b>Price:</b> 30€ / Night</ListItem>
                     <LinkButton> 
                         <Anker href="http://www.airbnb.com">Hier Verfügbarkeit überprüfen und buchen</Anker>
                     </LinkButton>        
