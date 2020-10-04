@@ -4,12 +4,13 @@ import styled from "styled-components";
 
 const QuaderBox = styled.div`
 display: flex;
-justify-content: center
+justify-content: center;
+border-radius: 5px
 `;
 
 const Quader = styled.img`
-width: 50%;
-height: 90px;
+width: 60%;
+height: 150px;
 background: red;
 display: flex;
 align-items: center;
@@ -17,10 +18,13 @@ justify-content: center;
 margin: 10px
 `;
 
-export default function Slider() {
+export default function Slider({pic1}) {
+  console.log(pic1)
   return (
-    <QuaderBox> 
-        <Quader src="https://a0.muscache.com/im/pictures/62c9cb76-c15d-44a2-bea2-52d36a82dbc6.jpg?aki_policy=xx_large"></Quader>
-    </QuaderBox>   
+    <>
+       <QuaderBox> 
+          <Quader src={pic1}></Quader>
+        </QuaderBox>  
+    </>  
   )
 }
