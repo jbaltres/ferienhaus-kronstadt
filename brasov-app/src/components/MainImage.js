@@ -6,7 +6,10 @@ width:100%;
 height:400px;
 display:flex; 
 justify-content: space-around;
-margin: 10px 0px 0px 0px;
+@media (max-width: 768px) {
+  margin: 0px;
+};
+margin: 10px 0px ;
 `;
 
 const HeadImage = styled.img`

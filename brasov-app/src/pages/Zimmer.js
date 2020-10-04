@@ -70,7 +70,7 @@ export default function Home() {
       <CardForCarousel sorc="https://a0.muscache.com/im/pictures/69c4c6d7-48d7-4338-8208-bf5c358effb9.jpg?im_w=1440"/>
     </Carousel>
   </Card>
-  <Ha2>Appartment 2</Ha2>
+  <Ha2>Garsoniera</Ha2>
   <Card> 
     <Carousel>
       <CardForCarousel sorc="https://a0.muscache.com/im/pictures/1c24f67e-9944-4b61-b1ab-b71be2b32619.jpg?im_w=1200"/>
