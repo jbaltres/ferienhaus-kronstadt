@@ -7,7 +7,7 @@ const MenuContainer = styled.div`
 `;
 
 const Topmenu = styled.li`
-
+float:left;
 `;
 
 
@@ -18,10 +18,12 @@ const Submenu = styled.span`
 const MenuUl = styled.ul`
     list-style-type:none;
     list-style-image:none;
+    margin:0;
     padding:0;
 `;
 
 const TopMenuAnker = styled.a`
+float:left;
 width:120px;
 text-align:center;
 
@@ -34,7 +36,7 @@ margin:0;
 `;
 
 const TopMenuUl= styled.ul`
-display:block;
+display:none;
 
 :hover {
     display:block;

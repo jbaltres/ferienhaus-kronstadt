@@ -50,9 +50,6 @@ function NavBar({handleToggle}) {
       <LinkDecoration to="/preise">
         <NavigationText>Preise</NavigationText>
       </LinkDecoration> 
-      <LinkDecoration to="/aboutkronstadt">
-        <NavigationText>Über Kronstadt</NavigationText> 
-      </LinkDecoration>
     </Title>
   );
 }

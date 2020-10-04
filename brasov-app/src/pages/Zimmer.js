@@ -16,37 +16,6 @@ const Card = styled.span`
   height: 90vh
 `;
 
-const CardHeadline = styled.h2`
-  color: grey
-`;
-
-const Image = styled.img`
-  width: 90%;
-  max-width:400px;
-  height: 200px
-  border-radius: 30%;
-  margin: auto 50px;
-`;
-
-const DescriptionText = styled.p`
-color: yellow;
-flex-grow:1;
-overflow: scroll;
-display:flex;
-justify-content:center;
-margin: auto
-`;
-const Table = styled.table`
-width: 320px;
-border-width: 2px;
-border-style: solid;
-border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;`;
-
-const TableLines = styled.tr`
-border-width: 2px;
-border-style: solid;
-border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;`;
-
 const Ha2 = styled.h2`
 display: flex;
 justify-content: center;

@@ -101,7 +101,7 @@ export default function Home() {
                     <ListItem><b>Rooms:</b> 2</ListItem>
                     <ListItem><b>Kitchen:</b> Yes</ListItem>
                     <ListItem><b>Bath:</b> Private</ListItem>
-                    <ListItem><b>Netflix:</b> ✔️</ListItem>
+                    <ListItem><b>Netflix:</b><span role="img" aria-label="Yes">✔️</span> </ListItem>
                     <ListItem><b>Price:</b> 40€ / Night</ListItem>
                         <LinkButton> 
                             <Anker href="https://www.airbnb.de/rooms/30269340?source_impression_id=p3_1601834562_KoGO5jV8I6w0ewSM">Hier Verfügbarkeit überprüfen und buchen</Anker>
@@ -114,7 +114,7 @@ export default function Home() {
                 <ListItem><b>Rooms:</b> 2</ListItem>
                 <ListItem><b>Kitchen:</b> Yes</ListItem>
                 <ListItem><b>Bath:</b> Private</ListItem>
-                <ListItem><b>Netflix:</b> ✔️</ListItem>
+                <ListItem><b>Netflix:</b> <span role="img" aria-label="Yes">✔️</span></ListItem>
                 <ListItem><b>Price:</b> 50€ / Night</ListItem>
                     <LinkButton2> 
                         <Anker href="https://www.airbnb.de/rooms/34850424?source_impression_id=p3_1601834588_OEdf7%2BUXKmqAkEo2">Hier Verfügbarkeit überprüfen und buchen</Anker>
@@ -127,7 +127,7 @@ export default function Home() {
                 <ListItem><b>Rooms:</b> 1</ListItem>
                 <ListItem><b>Kitchen:</b> No (Waterboiler and Coffeemaker inside)</ListItem>
                 <ListItem><b>Bath:</b> Private</ListItem>
-                <ListItem><b>Netflix:</b> ✔️</ListItem>
+                <ListItem><b>Netflix:</b> <span role="img" aria-label="Yes">✔️</span></ListItem>
                 <ListItem><b>Price:</b> 30€ / Night</ListItem>
                     <LinkButton> 
                         <Anker onClick={ () => alert("Dieses Zimmer ist Momentan nicht verfügbar")}>Hier Verfügbarkeit überprüfen und buchen</Anker>
