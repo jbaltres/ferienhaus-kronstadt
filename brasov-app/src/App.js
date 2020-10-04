@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import Preise from "./pages/Preise";
 import Zimmer from "./pages/Zimmer";
 import MainImage from './components/MainImage';
+import Header from './components/Header';
+import Menu2 from './components/Menu2';
 
 const Background = styled.div`
 background: papayawhip;
@@ -62,12 +64,39 @@ font-size: 80px;
 }
 `;
 
+const ToggleButton = styled.span`
+align-items: center;
+padding: 10px;
+margin-top: 3px;
+z-index: 400;
+justify-content: space-around;
+box-shadow: -6px -9px 22px hsla(300,15%,25%,0.8) inset
+
+@media (max-width: 768px) {
+  flex-direction: column;
+  align-items: flex-start;
+};
+`;
+
+const MenuContainer = styled.div`
+display:flex;
+`;
 
 function App() {
+
+    const [isToggled, setToggled] = React.useState(false);
+   
+
   return (
 <Router>
+    <Header/>
     <MainImage></MainImage>
-    <NavBar></NavBar>    
+     <MenuContainer>
+    <ToggleButton onClick={ () => setToggled(!isToggled)}>
+          <h3>Menu →</h3>
+    </ToggleButton>
+    <NavBar handleToggle={isToggled}></NavBar>  
+    </MenuContainer>    
     <Background>
     <Route path="/home" component={Home} />
     <Route path="/preise" component={Preise} />
