@@ -1,22 +1,19 @@
 body {
   margin: 0;
   background-color: papayawhip;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .rec.rec-arrow {
-  height: 16px;
-  width: 16px;
-  font-size: 0.7em;
   line-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -24,32 +21,35 @@ code {
 
 @media (max-width: 720px) {
   .rec.rec-arrow {
-    visibility: hidden; 
+    visibility: hidden;
     width: 0px;
-  }     
+  }
 }
 
 .rec-arrow-left {
-  margin-left: 3px;
-  }
-  
+  margin-left: 10px;
+}
+
 .rec-arrow-right {
-    margin-right: 3px;
-    }  
+  margin-right: 10px;
+}
 
 .rec.rec-pagination {
-  margin-top: 4px
+  margin: 10px;
 }
 
-.rec.rec-dot{
+.rec.rec-dot {
   width: 4px;
   height: 8px;
-  box-shadow: 0 0 1px 2px rgba(0,0,0,0.5)
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.rec.rec-dot_active{
-  background-color: rgba(103,58,183,.9);
+.rec.rec-dot_active {
+  background-color: rgba(103, 58, 183, 0.9);
   border-radius: 0%;
-  box-shadow: 0 0 1px 0.5px rgba(0,0,0,0.5)
+  box-shadow: 0 0 1px 0.5px rgba(0, 0, 0, 0.5);
 }
 
+.rec.rec-carousel-item {
+  margin-right: 10px;
+}
