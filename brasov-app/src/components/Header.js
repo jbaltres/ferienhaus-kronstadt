@@ -11,10 +11,11 @@ function Header(props) {
     border-width: 2px;
     border-style: solid;
     border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;
-    z-index: 2000;
+    z-index: 3200;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
     position: fixed;
+    inline-size: -webkit-fill-available;
   `;
 
   const Headline = styled.span`
@@ -31,7 +32,7 @@ function Header(props) {
     display: flex;
     width: 35px;
     height: 35px;
-    margin-right: 8%;
+    margin-right: 2%;
     margin-left: 7px;
   `;
 

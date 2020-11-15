@@ -19,7 +19,6 @@ function App() {
   const ToggleButton = styled.span`
     align-items: center;
     padding: 10px;
-    margin-top: 3px;
     z-index: 400;
     justify-content: space-around;
     box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.8) inset;
@@ -40,8 +39,9 @@ function App() {
     margin: 5px 10px;
 
     animation-name: bounce2;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
+    animation-delay: ${(props) => props.delaytime || "0.4s"};
     animation-timing-function: linear;
 
     @keyframes bounce2 {
@@ -79,7 +79,7 @@ function App() {
     display: ${visible ? "none" : "flex"};
     width: 100%;
     justify-content: flex-start;
-    z-index: 200;
+    z-index: 2200;
     background-color: rgba(189, 195, 199, 0.7);
     position: fixed;
     flex-wrap: wrap;
@@ -150,14 +150,17 @@ function App() {
       </HeaderWrapper>
       <Flagwrapper onClick={(e) => setVisible(!visible)}>
         <Flag
+          delaytime="0.1s"
           onClick={() => setlanguage("deutsch")}
           src="https://cdn.countryflags.com/thumbs/germany/flag-round-250.png"
         ></Flag>
         <Flag
+          delaytime="0.3s"
           onClick={() => setlanguage("rumänisch")}
           src="https://cdn.countryflags.com/thumbs/romania/flag-button-round-250.png"
         ></Flag>
         <Flag
+          delaytime="0.5s"
           onClick={() => setlanguage("englisch")}
           src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png"
         ></Flag>
@@ -170,10 +173,12 @@ function App() {
           src="https://cdn.countryflags.com/thumbs/hungary/flag-button-round-250.png"
         ></Flag>
         <Flag
+          delaytime="0.3s"
           onClick={() => setlanguage("französisch")}
           src="https://cdn.countryflags.com/thumbs/france/flag-3d-round-250.png"
         ></Flag>
         <Flag
+          delaytime="0.2s"
           onClick={() => setlanguage("hebräisch")}
           src="https://cdn.countryflags.com/thumbs/israel/flag-3d-round-250.png"
         ></Flag>
@@ -183,13 +188,15 @@ function App() {
         <ToggleButton onClick={() => setToggled(!isToggled)}>
           <h3>Menu →</h3>
         </ToggleButton>
-        <NavBar handleToggle={isToggled}></NavBar>
+        <NavBar handleToggle={isToggled} language={language}></NavBar>
       </MenuContainer>
       <Background>
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
-        <Route path="/home" component={Home} />
+        <Route path="/home">
+          <Home language={language} />
+        </Route>
         <Route path="/preise">
           <Preise language={language} />
         </Route>
