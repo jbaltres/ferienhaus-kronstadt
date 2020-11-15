@@ -17,11 +17,11 @@ const CardWrapper = styled.div`
 
 const WelcomeText = styled.div`
   font-family: cursive;
-  font-size: 20px;
   width: 90%;
   margin: 15px auto;
   color: rgba(41, 49, 51, 0.8);
   font-size: 1.5em;
+  font-style: bold;
 `;
 
 const HomePicture = styled.img`
@@ -34,29 +34,33 @@ const HomePicture = styled.img`
 
 const Headline = styled.h2`
   font-size: 2em;
+  font-family: cursive;
+  width: 90%;
+  margin: 15px auto;
+  color: rgba(41, 49, 51, 0.8);
 `;
 
 export default function Home(props) {
   return (
     <CardWrapper>
+      <Headline>
+        {props.language === "deutsch"
+          ? deutsch.TextHeadline
+          : props.language === "englisch"
+          ? englisch.TextHeadline
+          : props.language === "rumänisch"
+          ? rumänisch.TextHeadline
+          : props.language === "ungarisch"
+          ? ungarisch.TextHeadline
+          : props.language === "französisch"
+          ? französisch.TextHeadline
+          : props.language === "spanisch"
+          ? spanisch.TextHeadline
+          : props.language === "hebräisch"
+          ? hebräisch.TextHeadline
+          : "ciao bella"}
+      </Headline>{" "}
       <WelcomeText>
-        <Headline>
-          {props.language === "deutsch"
-            ? deutsch.TextHeadline
-            : props.language === "englisch"
-            ? englisch.TextHeadline
-            : props.language === "rumänisch"
-            ? rumänisch.TextHeadline
-            : props.language === "ungarisch"
-            ? ungarisch.TextHeadline
-            : props.language === "französisch"
-            ? französisch.TextHeadline
-            : props.language === "spanisch"
-            ? spanisch.TextHeadline
-            : props.language === "hebräisch"
-            ? hebräisch.TextHeadline
-            : "ciao bella"}
-        </Headline>
         <p />
         {props.language === "deutsch"
           ? deutsch.Text1
