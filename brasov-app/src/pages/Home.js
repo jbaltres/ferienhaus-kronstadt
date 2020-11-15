@@ -12,6 +12,15 @@ const WelcomeText = styled.div`
   width: 90%;
   margin: 15px auto;
   color: rgba(41, 49, 51, 0.8);
+  font-size: 1.5em;
+`;
+
+const HomePicture = styled.img`
+  width: 100%;
+  margin: 25px 0 5px 0;
+  @media (min-width: 780px) {
+    width: 0px;
+  } ;
 `;
 
 const Headline = styled.h2`
@@ -39,6 +48,7 @@ export default function Home() {
         oder zu einem wärmenden Glühschnaps, ein. Mehr über Braşov lernen Sie
         hier.
       </WelcomeText>
+      <HomePicture src="https://ioanaphotos.files.wordpress.com/2010/09/p1070396.jpg?w=758&h=&zoom=2"></HomePicture>
     </CardWrapper>
   );
 }
