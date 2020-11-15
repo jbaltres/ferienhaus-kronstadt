@@ -20,7 +20,7 @@ const WelcomeText = styled.div`
   width: 90%;
   margin: 15px auto;
   color: rgba(41, 49, 51, 0.8);
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-style: bold;
 `;
 
@@ -33,7 +33,7 @@ const HomePicture = styled.img`
 `;
 
 const Headline = styled.h2`
-  font-size: 2em;
+  font-size: 2.2em;
   font-family: cursive;
   width: 90%;
   margin: 15px auto;
