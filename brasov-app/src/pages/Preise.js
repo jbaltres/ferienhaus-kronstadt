@@ -1,17 +1,27 @@
 import React from "react";
-import styled from "styled-components"
+import styled from "styled-components";
 import Slider from "../components/Slider";
+import {
+  deutsch,
+  englisch,
+  rumänisch,
+  hebräisch,
+  spanisch,
+  ungarisch,
+  französisch,
+} from "../languages/api";
 
 const Site = styled.div`
-background: papayawhip;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-font-family: 'Source Sans Pro', Arial, sans-serif;
+  background: papayawhip;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 1.2rem;
 `;
 
 const Pricing = styled.ul`
-list-style: none;
+  list-style: none;
   margin: 2em;
   padding: 0;
   display: flex;
@@ -19,120 +29,462 @@ list-style: none;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 50px;
   color: white;
-  background: ${props => props.bgcolor || "yellow"};
+  background: ${(props) => props.bgcolor || "yellow"};
   position: relative;
   width: 350px; /* width of each table */
   margin-right: 30px; /* spacing between tables */
   margin-bottom: 1em;
-  transition: all .5s;
+  transition: all 0.5s;
 
   :hover {
     transform: scale(1.05);
-    transition: all .5s;
+    transition: all 0.5s;
     z-index: 100;
     box-shadow: 0 0 10px gray;
   }
 `;
 
 const ListItem = styled.li`
-    margin: 10px 20px;
-    position: relative;
+  margin: 10px 20px;
+  position: relative;
 `;
 
 const LiTitle = styled.li`
-    font-size: 150%;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    text-transform: uppercase;
-    border-bottom: 5px solid white;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  border-bottom: 5px solid white;
 `;
 
 const LinkButton = styled.button`
-    background: #3F7FBF;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-    max-width: 150px
-    margin: 10px auto;
-    border-radius: 5px;
-    text-transform: uppercase;
-    border: none;
+  background: #3f7fbf;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  max-width: 150px;
+  margin: 10px auto;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
 
-    :hover{
-        transform: 1.5em;
-        box-shadow: 0 4px 8px 0 rgba(0, 256, 0, 0.8), 0 6px 20px 0 rgba(0, 256, 0, 0.6);
-    }
+  :hover {
+    transform: 1.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 256, 0, 0.8),
+      0 6px 20px 0 rgba(0, 256, 0, 0.6);
+  }
 `;
 
 const LinkButton2 = styled.button`
-    background: #FA7268;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-    max-width: 150px
-    margin: 10px auto;
-    border-radius: 5px;
-    text-transform: uppercase;
-    border: none;
+  background: #fa7268;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  max-width: 150px;
+  margin: 10px auto;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
 
-    :hover{
-        transform: 1.5em;
-        box-shadow: 0 4px 8px 0 rgba(0, 256, 0, 0.8), 0 6px 20px 0 rgba(0, 256, 0, 0.6);
-    }
+  :hover {
+    transform: 1.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 256, 0, 0.8),
+      0 6px 20px 0 rgba(0, 256, 0, 0.6);
+  }
 `;
 
 const Anker = styled.a`
-text-decoration: none;
-color: white
+  text-decoration: none;
+  color: white;
 `;
 
+export default function Preise(props) {
+  console.log("die sprache ist" + props.language);
+  const pic1 =
+    "https://a0.muscache.com/im/pictures/62c9cb76-c15d-44a2-bea2-52d36a82dbc6.jpg?im_w=1200";
+  const pic2 =
+    "https://a0.muscache.com/im/pictures/1c24f67e-9944-4b61-b1ab-b71be2b32619.jpg?im_w=1200";
+  console.log(pic1);
 
-
-export default function Home() {
-    const pic1 = "https://a0.muscache.com/im/pictures/62c9cb76-c15d-44a2-bea2-52d36a82dbc6.jpg?im_w=1200"
-    const pic2 = "https://a0.muscache.com/im/pictures/1c24f67e-9944-4b61-b1ab-b71be2b32619.jpg?im_w=1200"
-    console.log(pic1)
-  return <Site>
-            <Pricing bgcolor="rgba(250,114,104,0.5)">
-              <Slider pic1={pic1}></Slider>
-                <LiTitle>App I</LiTitle>
-                    <ListItem><b>Persons:</b> 2-4</ListItem>
-                    <ListItem><b>Rooms:</b> 2</ListItem>
-                    <ListItem><b>Kitchen:</b> Yes</ListItem>
-                    <ListItem><b>Bath:</b> Private</ListItem>
-                    <ListItem><b>Netflix:</b><span role="img" aria-label="Yes">✔️</span> </ListItem>
-                    <ListItem><b>Price:</b> 40€ / Night</ListItem>
-                        <LinkButton> 
-                            <Anker href="https://www.airbnb.de/rooms/30269340?source_impression_id=p3_1601834562_KoGO5jV8I6w0ewSM">Hier Verfügbarkeit überprüfen und buchen</Anker>
-                        </LinkButton>
-            </Pricing>
-            <Pricing bgcolor="rgba(63,127,191,0.6)">
-              <Slider pic1={pic2}></Slider>
-                <LiTitle>App II</LiTitle>
-                <ListItem><b>Persons:</b> 2-4</ListItem>
-                <ListItem><b>Rooms:</b> 2</ListItem>
-                <ListItem><b>Kitchen:</b> Yes</ListItem>
-                <ListItem><b>Bath:</b> Private</ListItem>
-                <ListItem><b>Netflix:</b> <span role="img" aria-label="Yes">✔️</span></ListItem>
-                <ListItem><b>Price:</b> 50€ / Night</ListItem>
-                    <LinkButton2> 
-                        <Anker href="https://www.airbnb.de/rooms/34850424?source_impression_id=p3_1601834588_OEdf7%2BUXKmqAkEo2">Hier Verfügbarkeit überprüfen und buchen</Anker>
-                    </LinkButton2>            
-            </Pricing>
-            <Pricing bgcolor="rgba(250,114,104,0.5)">
-              <Slider pic1={pic1}></Slider>
-                <LiTitle>Garsoniera</LiTitle>
-                <ListItem><b>Persons:</b> 1-2</ListItem>
-                <ListItem><b>Rooms:</b> 1</ListItem>
-                <ListItem><b>Kitchen:</b> No (Waterboiler and Coffeemaker inside)</ListItem>
-                <ListItem><b>Bath:</b> Private</ListItem>
-                <ListItem><b>Netflix:</b> <span role="img" aria-label="Yes">✔️</span></ListItem>
-                <ListItem><b>Price:</b> 30€ / Night</ListItem>
-                    <LinkButton> 
-                        <Anker onClick={ () => alert("Dieses Zimmer ist Momentan nicht verfügbar")}>Hier Verfügbarkeit überprüfen und buchen</Anker>
-                    </LinkButton>        
-            </Pricing>
-        </Site>;
-
+  return (
+    <Site>
+      <Pricing bgcolor="rgba(250,114,104,0.9)">
+        <Slider pic1={pic1}></Slider>
+        <LiTitle>Appartment I</LiTitle>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld1
+              : props.language === "englisch"
+              ? englisch.Feld1
+              : props.language === "rumänisch"
+              ? rumänisch.Feld1
+              : props.language === "ungarisch"
+              ? ungarisch.Feld1
+              : props.language === "französisch"
+              ? französisch.Feld1
+              : props.language === "spanisch"
+              ? spanisch.Feld1
+              : props.language === "hebräisch"
+              ? hebräisch.Feld1
+              : "ciao bella"}
+          </b>{" "}
+          2-4
+        </ListItem>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld3
+              : props.language === "englisch"
+              ? englisch.Feld3
+              : props.language === "rumänisch"
+              ? rumänisch.Feld3
+              : props.language === "ungarisch"
+              ? ungarisch.Feld3
+              : props.language === "französisch"
+              ? französisch.Feld3
+              : props.language === "spanisch"
+              ? spanisch.Feld3
+              : props.language === "hebräisch"
+              ? hebräisch.Feld3
+              : "ciao bella"}
+          </b>{" "}
+          2
+        </ListItem>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld5
+              : props.language === "englisch"
+              ? englisch.Feld5
+              : props.language === "rumänisch"
+              ? rumänisch.Feld5
+              : props.language === "ungarisch"
+              ? ungarisch.Feld5
+              : props.language === "französisch"
+              ? französisch.Feld5
+              : props.language === "spanisch"
+              ? spanisch.Feld5
+              : props.language === "hebräisch"
+              ? hebräisch.Feld5
+              : "ciao bella"}
+          </b>{" "}
+          {props.language === "deutsch"
+            ? deutsch.Feld6
+            : props.language === "englisch"
+            ? englisch.Feld6
+            : props.language === "rumänisch"
+            ? rumänisch.Feld6
+            : props.language === "ungarisch"
+            ? ungarisch.Feld6
+            : props.language === "französisch"
+            ? französisch.Feld6
+            : props.language === "spanisch"
+            ? spanisch.Feld6
+            : props.language === "hebräisch"
+            ? hebräisch.Feld6
+            : "ciao bella"}
+        </ListItem>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld7
+              : props.language === "englisch"
+              ? englisch.Feld7
+              : props.language === "rumänisch"
+              ? rumänisch.Feld7
+              : props.language === "ungarisch"
+              ? ungarisch.Feld7
+              : props.language === "französisch"
+              ? französisch.Feld7
+              : props.language === "spanisch"
+              ? spanisch.Feld7
+              : props.language === "hebräisch"
+              ? hebräisch.Feld7
+              : "ciao bella"}
+          </b>{" "}
+          {props.language === "deutsch"
+            ? deutsch.Feld8
+            : props.language === "englisch"
+            ? englisch.Feld8
+            : props.language === "rumänisch"
+            ? rumänisch.Feld8
+            : props.language === "ungarisch"
+            ? ungarisch.Feld8
+            : props.language === "französisch"
+            ? französisch.Feld8
+            : props.language === "spanisch"
+            ? spanisch.Feld8
+            : props.language === "hebräisch"
+            ? hebräisch.Feld8
+            : "ciao bella"}
+        </ListItem>
+        <ListItem>
+          <b>Netflix:</b>
+          <span role="img" aria-label="Yes">
+            ✔️
+          </span>{" "}
+        </ListItem>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld11
+              : props.language === "englisch"
+              ? englisch.Feld11
+              : props.language === "rumänisch"
+              ? rumänisch.Feld11
+              : props.language === "ungarisch"
+              ? ungarisch.Feld11
+              : props.language === "französisch"
+              ? französisch.Feld11
+              : props.language === "spanisch"
+              ? spanisch.Feld11
+              : props.language === "hebräisch"
+              ? hebräisch.Feld11
+              : "ciao bella"}
+          </b>{" "}
+          {props.language === "deutsch"
+            ? deutsch.Feld12
+            : props.language === "englisch"
+            ? englisch.Feld12
+            : props.language === "rumänisch"
+            ? rumänisch.Feld12
+            : props.language === "ungarisch"
+            ? ungarisch.Feld12
+            : props.language === "französisch"
+            ? französisch.Feld12
+            : props.language === "spanisch"
+            ? spanisch.Feld12
+            : props.language === "hebräisch"
+            ? hebräisch.Feld12
+            : "ciao bella"}
+        </ListItem>
+        <LinkButton>
+          <Anker href="https://www.airbnb.de/rooms/30269340?source_impression_id=p3_1601834562_KoGO5jV8I6w0ewSM">
+            {props.language === "deutsch"
+              ? deutsch.AirBnbButton
+              : props.language === "englisch"
+              ? englisch.AirBnbButton
+              : props.language === "rumänisch"
+              ? rumänisch.AirBnbButton
+              : props.language === "ungarisch"
+              ? ungarisch.AirBnbButton
+              : props.language === "französisch"
+              ? französisch.AirBnbButton
+              : props.language === "spanisch"
+              ? spanisch.AirBnbButton
+              : props.language === "hebräisch"
+              ? hebräisch.AirBnbButton
+              : "ciao bella"}{" "}
+          </Anker>
+        </LinkButton>
+      </Pricing>
+      <Pricing bgcolor="rgba(63,127,191,0.7)">
+        <Slider pic1={pic2}></Slider>
+        <LiTitle>Garsoniera</LiTitle>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld1
+              : props.language === "englisch"
+              ? englisch.Feld1
+              : props.language === "rumänisch"
+              ? rumänisch.Feld1
+              : props.language === "ungarisch"
+              ? ungarisch.Feld1
+              : props.language === "französisch"
+              ? französisch.Feld1
+              : props.language === "spanisch"
+              ? spanisch.Feld1
+              : props.language === "hebräisch"
+              ? hebräisch.Feld1
+              : "ciao bella"}
+          </b>{" "}
+          1-2
+        </ListItem>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld3
+              : props.language === "englisch"
+              ? englisch.Feld3
+              : props.language === "rumänisch"
+              ? rumänisch.Feld3
+              : props.language === "ungarisch"
+              ? ungarisch.Feld3
+              : props.language === "französisch"
+              ? französisch.Feld3
+              : props.language === "spanisch"
+              ? spanisch.Feld3
+              : props.language === "hebräisch"
+              ? hebräisch.Feld3
+              : "ciao bella"}
+          </b>{" "}
+          1
+        </ListItem>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld5
+              : props.language === "englisch"
+              ? englisch.Feld5
+              : props.language === "rumänisch"
+              ? rumänisch.Feld5
+              : props.language === "ungarisch"
+              ? ungarisch.Feld5
+              : props.language === "französisch"
+              ? französisch.Feld5
+              : props.language === "spanisch"
+              ? spanisch.Feld5
+              : props.language === "hebräisch"
+              ? hebräisch.Feld5
+              : "ciao bella"}
+          </b>{" "}
+          {props.language === "deutsch"
+            ? deutsch.Feld6
+            : props.language === "englisch"
+            ? englisch.Feld6
+            : props.language === "rumänisch"
+            ? rumänisch.Feld6
+            : props.language === "ungarisch"
+            ? ungarisch.Feld6
+            : props.language === "französisch"
+            ? französisch.Feld6
+            : props.language === "spanisch"
+            ? spanisch.Feld6
+            : props.language === "hebräisch"
+            ? hebräisch.Feld6
+            : "ciao bella"}
+        </ListItem>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld7
+              : props.language === "englisch"
+              ? englisch.Feld7
+              : props.language === "rumänisch"
+              ? rumänisch.Feld7
+              : props.language === "ungarisch"
+              ? ungarisch.Feld7
+              : props.language === "französisch"
+              ? französisch.Feld7
+              : props.language === "spanisch"
+              ? spanisch.Feld7
+              : props.language === "hebräisch"
+              ? hebräisch.Feld7
+              : "ciao bella"}
+          </b>{" "}
+          {props.language === "deutsch"
+            ? deutsch.Feld8
+            : props.language === "englisch"
+            ? englisch.Feld8
+            : props.language === "rumänisch"
+            ? rumänisch.Feld8
+            : props.language === "ungarisch"
+            ? ungarisch.Feld8
+            : props.language === "französisch"
+            ? französisch.Feld8
+            : props.language === "spanisch"
+            ? spanisch.Feld8
+            : props.language === "hebräisch"
+            ? hebräisch.Feld8
+            : "ciao bella"}
+        </ListItem>
+        <ListItem>
+          <b>Netflix:</b>{" "}
+          <span role="img" aria-label="Yes">
+            ✔️
+          </span>
+        </ListItem>
+        <ListItem>
+          <b>
+            {props.language === "deutsch"
+              ? deutsch.Feld11
+              : props.language === "englisch"
+              ? englisch.Feld11
+              : props.language === "rumänisch"
+              ? rumänisch.Feld11
+              : props.language === "ungarisch"
+              ? ungarisch.Feld11
+              : props.language === "französisch"
+              ? französisch.Feld11
+              : props.language === "spanisch"
+              ? spanisch.Feld11
+              : props.language === "hebräisch"
+              ? hebräisch.Feld11
+              : "ciao bella"}
+          </b>{" "}
+          {props.language === "deutsch"
+            ? deutsch.Feld12
+            : props.language === "englisch"
+            ? englisch.Feld12
+            : props.language === "rumänisch"
+            ? rumänisch.Feld12
+            : props.language === "ungarisch"
+            ? ungarisch.Feld12
+            : props.language === "französisch"
+            ? französisch.Feld12
+            : props.language === "spanisch"
+            ? spanisch.Feld12
+            : props.language === "hebräisch"
+            ? hebräisch.Feld12
+            : "ciao bella"}
+        </ListItem>
+        <LinkButton2>
+          <Anker
+            onClick={() => alert("Dieses Zimmer ist Momentan nicht verfügbar")}
+          >
+            {props.language === "deutsch"
+              ? deutsch.AirBnbButton
+              : props.language === "englisch"
+              ? englisch.AirBnbButton
+              : props.language === "rumänisch"
+              ? rumänisch.AirBnbButton
+              : props.language === "ungarisch"
+              ? ungarisch.AirBnbButton
+              : props.language === "französisch"
+              ? französisch.AirBnbButton
+              : props.language === "spanisch"
+              ? spanisch.AirBnbButton
+              : props.language === "hebräisch"
+              ? hebräisch.AirBnbButton
+              : "ciao bella"}
+          </Anker>
+        </LinkButton2>
+      </Pricing>
+    </Site>
+  );
 }
+/*
+<Pricing bgcolor="rgba(63,127,191,0.6)">
+        <Slider pic1={pic2}></Slider>
+        <LiTitle>App II</LiTitle>
+        <ListItem>
+          <b>Persons:</b> 2-4
+        </ListItem>
+        <ListItem>
+          <b>Rooms:</b> 2
+        </ListItem>
+        <ListItem>
+          <b>Kitchen:</b> Yes
+        </ListItem>
+        <ListItem>
+          <b>Bath:</b> Private
+        </ListItem>
+        <ListItem>
+          <b>Netflix:</b>{" "}
+          <span role="img" aria-label="Yes">
+            ✔️
+          </span>
+        </ListItem>
+        <ListItem>
+          <b>Price:</b> 50€ / Night
+        </ListItem>
+        <LinkButton2>
+          <Anker href="https://www.airbnb.de/rooms/34850424?source_impression_id=p3_1601834588_OEdf7%2BUXKmqAkEo2">
+            Hier Verfügbarkeit überprüfen und buchen
+          </Anker>
+        </LinkButton2>
+      </Pricing>
+*/

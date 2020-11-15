@@ -1,5 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import {
+  deutsch,
+  englisch,
+  rumänisch,
+  hebräisch,
+  spanisch,
+  ungarisch,
+  französisch,
+} from "../languages/api";
 
 const CardWrapper = styled.div`
   width: 90%;
@@ -27,26 +36,108 @@ const Headline = styled.h2`
   font-size: 2em;
 `;
 
-export default function Home() {
+export default function Home(props) {
   return (
     <CardWrapper>
       <WelcomeText>
-        <Headline>Willkommen in Siebenbürgen.</Headline>
+        <Headline>
+          {props.language === "deutsch"
+            ? deutsch.TextHeadline
+            : props.language === "englisch"
+            ? englisch.TextHeadline
+            : props.language === "rumänisch"
+            ? rumänisch.TextHeadline
+            : props.language === "ungarisch"
+            ? ungarisch.TextHeadline
+            : props.language === "französisch"
+            ? französisch.TextHeadline
+            : props.language === "spanisch"
+            ? spanisch.TextHeadline
+            : props.language === "hebräisch"
+            ? hebräisch.TextHeadline
+            : "ciao bella"}
+        </Headline>
         <p />
-        Wir begrüßen Sie in unseren Ferienwohnungen und Fremdenzimmern im Herzen
-        Rumäniens. <br />
-        Aus unserer Unterkunft gelangen Sie schnell ins Stadtzentrum von
-        Kronstadt/Braşov, wo Sie zahlreiche Einkaufsmöglichkeiten und
-        Gastronomien mit landestypischen Spezialitäten erwarten. <br />
-        Von Kronstadt aus gelangen Sie schnell zu den höchsten Spitzen der
-        Karpaten, die waldreichste Gegend Europas, für welche das Land bekannt
-        ist. <br />
+        {props.language === "deutsch"
+          ? deutsch.Text1
+          : props.language === "englisch"
+          ? englisch.Text1
+          : props.language === "rumänisch"
+          ? rumänisch.Text1
+          : props.language === "ungarisch"
+          ? ungarisch.Text1
+          : props.language === "französisch"
+          ? französisch.Text1
+          : props.language === "spanisch"
+          ? spanisch.Text1
+          : props.language === "hebräisch"
+          ? hebräisch.Text1
+          : "ciao bella"}{" "}
         <br />
-        Ein Super Platz für alle Wanderfreunde.
+        {props.language === "deutsch"
+          ? deutsch.Text2
+          : props.language === "englisch"
+          ? englisch.Text2
+          : props.language === "rumänisch"
+          ? rumänisch.Text2
+          : props.language === "ungarisch"
+          ? ungarisch.Text2
+          : props.language === "französisch"
+          ? französisch.Text2
+          : props.language === "spanisch"
+          ? spanisch.Text2
+          : props.language === "hebräisch"
+          ? hebräisch.Text2
+          : "ciao bella"}{" "}
+        <br />
+        {props.language === "deutsch"
+          ? deutsch.Text3
+          : props.language === "englisch"
+          ? englisch.Text3
+          : props.language === "rumänisch"
+          ? rumänisch.Text3
+          : props.language === "ungarisch"
+          ? ungarisch.Text3
+          : props.language === "französisch"
+          ? französisch.Text3
+          : props.language === "spanisch"
+          ? spanisch.Text3
+          : props.language === "hebräisch"
+          ? hebräisch.Text3
+          : "ciao bella"}
+        <br />
+        <br />
+        {props.language === "deutsch"
+          ? deutsch.Text4
+          : props.language === "englisch"
+          ? englisch.Text4
+          : props.language === "rumänisch"
+          ? rumänisch.Text4
+          : props.language === "ungarisch"
+          ? ungarisch.Text4
+          : props.language === "französisch"
+          ? französisch.Text4
+          : props.language === "spanisch"
+          ? spanisch.Text4
+          : props.language === "hebräisch"
+          ? hebräisch.Text4
+          : "ciao bella"}
         <br /> <br />
-        Im Winter läd sie unter anderem das anliegende Skigebiet zum Skifahren,
-        oder zu einem wärmenden Glühschnaps, ein. Mehr über Braşov lernen Sie
-        hier.
+        {props.language === "deutsch"
+          ? deutsch.Text5
+          : props.language === "englisch"
+          ? englisch.Text5
+          : props.language === "rumänisch"
+          ? rumänisch.Text5
+          : props.language === "ungarisch"
+          ? ungarisch.Text5
+          : props.language === "französisch"
+          ? französisch.Text5
+          : props.language === "spanisch"
+          ? spanisch.Text5
+          : props.language === "hebräisch"
+          ? hebräisch.Text5
+          : "ciao bella"}
       </WelcomeText>
       <HomePicture src="https://ioanaphotos.files.wordpress.com/2010/09/p1070396.jpg?w=758&h=&zoom=2"></HomePicture>
     </CardWrapper>
