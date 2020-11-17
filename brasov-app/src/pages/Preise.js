@@ -342,19 +342,19 @@ export default function Preise(props) {
               : "ciao bella"}
           </b>{" "}
           {props.language === "deutsch"
-            ? deutsch.Feld6
+            ? deutsch.Feld6Garsoniera
             : props.language === "englisch"
-            ? englisch.Feld6
+            ? englisch.Feld6Garsoniera
             : props.language === "rumänisch"
-            ? rumänisch.Feld6
+            ? rumänisch.Feld6Garsoniera
             : props.language === "ungarisch"
-            ? ungarisch.Feld6
+            ? ungarisch.Feld6Garsoniera
             : props.language === "französisch"
-            ? französisch.Feld6
+            ? französisch.Feld6Garsoniera
             : props.language === "spanisch"
-            ? spanisch.Feld6
+            ? spanisch.Feld6Garsoniera
             : props.language === "hebräisch"
-            ? hebräisch.Feld6
+            ? hebräisch.Feld6Garsoniera
             : "ciao bella"}
         </ListItem>
         <ListItem>
@@ -416,25 +416,24 @@ export default function Preise(props) {
               : "ciao bella"}
           </b>{" "}
           {props.language === "deutsch"
-            ? deutsch.Feld12
+            ? deutsch.Feld12Garsoniera
             : props.language === "englisch"
-            ? englisch.Feld12
+            ? englisch.Feld12Garsoniera
             : props.language === "rumänisch"
-            ? rumänisch.Feld12
+            ? rumänisch.Feld12Garsoniera
             : props.language === "ungarisch"
-            ? ungarisch.Feld12
+            ? ungarisch.Feld12Garsoniera
             : props.language === "französisch"
-            ? französisch.Feld12
+            ? französisch.Feld12Garsoniera
             : props.language === "spanisch"
-            ? spanisch.Feld12
+            ? spanisch.Feld12Garsoniera
             : props.language === "hebräisch"
-            ? hebräisch.Feld12
+            ? hebräisch.Feld12Garsoniera
             : "ciao bella"}
         </ListItem>
         <LinkButton2>
-          <Anker
-            onClick={() => alert("Dieses Zimmer ist Momentan nicht verfügbar")}
-          >
+          <Anker href="https://www.airbnb.de/rooms/34850424?source_impression_id=p3_1601834588_OEdf7%2BUXKmqAkEo2">
+            {" "}
             {props.language === "deutsch"
               ? deutsch.AirBnbButton
               : props.language === "englisch"
