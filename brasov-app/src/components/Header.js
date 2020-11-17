@@ -21,11 +21,9 @@ function Header(props) {
   const Headline = styled.span`
     font-size: 25px;
     color: rgb(0, 195, 238);
-
+    font-family: cursive;
     flex-grow: 1;
     text-align: center;
-    font-family: -apple-system, BShitMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   `;
 
   const CurrentFlag = styled.img`

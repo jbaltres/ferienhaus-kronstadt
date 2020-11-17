@@ -52,7 +52,7 @@ function App() {
         transform: translateY(-30px);
       }
       20% {
-        transform: translateY(0px);
+        transform: translateY(10px);
       }
       30% {
         transform: translateY(-22px);
@@ -83,9 +83,9 @@ function App() {
     background-color: rgba(189, 195, 199, 0.7);
     position: fixed;
     flex-wrap: wrap;
-    margin-top: 31px;
+    margin-top: 35px;
     @media (max-width: 350px) {
-      margin-top: 55px;
+      margin-top: 75px;
     }
 
     animation-name: bounce;
@@ -178,7 +178,7 @@ function App() {
           src="https://cdn.countryflags.com/thumbs/france/flag-3d-round-250.png"
         ></Flag>
         <Flag
-          delaytime="0.2s"
+          delaytime="0.25s"
           onClick={() => setlanguage("hebräisch")}
           src="https://cdn.countryflags.com/thumbs/israel/flag-3d-round-250.png"
         ></Flag>

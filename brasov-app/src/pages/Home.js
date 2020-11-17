@@ -16,11 +16,12 @@ const CardWrapper = styled.div`
 `;
 
 const WelcomeText = styled.div`
-  font-family: cursive;
+  font-style: italic;
+  line-height: 1.5;
   width: 90%;
   margin: 15px auto;
   color: rgba(41, 49, 51, 0.8);
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-style: bold;
 `;
 
@@ -34,7 +35,6 @@ const HomePicture = styled.img`
 
 const Headline = styled.h2`
   font-size: 2.2em;
-  font-family: cursive;
   width: 90%;
   margin: 15px auto;
   color: rgba(41, 49, 51, 0.8);
