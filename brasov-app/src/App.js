@@ -11,28 +11,41 @@ import Header from "./components/Header";
 
 function App() {
   const [visible, setVisible] = React.useState(true);
+  const [isToggled, setToggled] = React.useState(false);
   console.log(visible);
   const Background = styled.div`
     background: papayawhip;
   `;
 
   const ToggleButton = styled.span`
+    margin-left: 13px;
+    display: flex;
     align-items: center;
-    background-color: papayawhip;
-    padding: 10px;
-    z-index: 400;
-    justify-content: space-around;
-    box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.8) inset;
-    cursor: pointer;
+    height: 100%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 500px) {
       flex-direction: column;
       align-items: flex-start;
-    } ;
+    }
+
+    background-color: rgb(0, 0, 0);
+    z-index: 400;
+    justify-content: space-around;
+    @media (max-width: 750px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    font-size: 25px;
+    color: rgb(0, 195, 238);
   `;
 
   const MenuContainer = styled.div`
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(37, 206, 197, 1), green) 50 15%;
     display: flex;
+    align-items: center;
+    background-color: black;
   `;
 
   const Flag = styled.img`
@@ -123,7 +136,6 @@ function App() {
     display: flex;
   `;
 
-  const [isToggled, setToggled] = React.useState(false);
   const [language, setlanguage] = React.useState("deutsch");
 
   console.log(language);
@@ -187,10 +199,8 @@ function App() {
       </Flagwrapper>
       <MainImage></MainImage>
       <MenuContainer>
-        <ToggleButton onClick={() => setToggled(!isToggled)}>
-          <h3>Menu →</h3>
-        </ToggleButton>
-        <NavBar language={language} handleToggle={isToggled}></NavBar>
+        <ToggleButton onClick={() => setToggled(!isToggled)}>Menu</ToggleButton>
+          <NavBar language={language}></NavBar>    
       </MenuContainer>
       <Background>
         <Route exact path="/">

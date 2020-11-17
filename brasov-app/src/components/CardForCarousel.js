@@ -14,6 +14,24 @@ const CardStyle = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: 15px;
+  border-radius: 10px;
+
+  background: linear-gradient(316deg, #09eab0, #3c2596);
+  background-size: 400% 400%;
+
+  animation: CardBackground 17s ease infinite;
+
+  @keyframes CardBackground {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
 `;
 
 const CardImage = styled.img`

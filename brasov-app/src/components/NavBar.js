@@ -18,62 +18,14 @@ function NavBar({ language, handleToggle }) {
     padding: 10px;
     background-color: rgb(0, 0, 0);
     margin: 0;
-    border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;
-    z-index: 40;
+    z-index: 400;
     justify-content: space-around;
-    @media (max-width: 768px) {
+    @media (max-width: 750px) {
       flex-direction: column;
       align-items: flex-start;
     }
     flex-grow: 1;
-
-    animation-name: ${handleToggle ? "slide-in" : "slide-out"};
-    animation-duration: ${handleToggle ? "1s" : "10000s"};
-    animation-iteration-count: 1;
-
-    @keyframes slide-in {
-      0% {
-        transform: translateX(-100%);
-      }
-      10% {
-        transform: translateX(0px);
-      }
-      20% {
-        transform: translateX(-80%);
-      }
-      30% {
-        transform: translateX(0px);
-      }
-      40% {
-        transform: translateX(-50%);
-      }
-      50% {
-        transform: translateX(0px);
-      }
-      60% {
-        transform: translateX(-30%);
-      }
-      70% {
-        transform: translateX(0);
-      }
-      80% {
-        transform: translateX(-10%);
-      }
-      100% {
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes slide-out {
-      0% {
-        transform: translateX(0px);
-      }
-      100% {
-        transform: translateX(-10000000%);
-      }
-    }
+    
   `;
 
   const NavigationText = styled.span`
