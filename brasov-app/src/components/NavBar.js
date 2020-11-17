@@ -11,101 +11,152 @@ import {
   französisch,
 } from "../languages/api";
 
-const Title = styled.span`
-  display: ${(props) => (props.changeToggle ? "none" : "flex")};
-  align-items: center;
-  padding: 10px;
-  background-color: rgb(0, 0, 0);
-  margin: 0;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;
-  z-index: 400;
-  justify-content: space-around;
+function NavBar({ language, handleToggle }) {
+  const Title = styled.span`
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;
+    z-index: 40;
+    justify-content: space-around;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    flex-grow: 1;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  flex-grow: 1;
-`;
+    animation-name: ${handleToggle ? "slide-in" : "slide-out"};
+    animation-duration: ${handleToggle ? "1s" : "10000s"};
+    animation-iteration-count: 1;
 
-const NavigationText = styled.span`
-  font-size: 25px;
-  color: rgb(0, 195, 238);
+    @keyframes slide-in {
+      0% {
+        transform: translateX(-100%);
+      }
+      10% {
+        transform: translateX(0px);
+      }
+      20% {
+        transform: translateX(-80%);
+      }
+      30% {
+        transform: translateX(0px);
+      }
+      40% {
+        transform: translateX(-50%);
+      }
+      50% {
+        transform: translateX(0px);
+      }
+      60% {
+        transform: translateX(-30%);
+      }
+      70% {
+        transform: translateX(0);
+      }
+      80% {
+        transform: translateX(-10%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
 
-  flex-grow: 1;
-  text-align: center;
-  font-family: -apple-system, BShitMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-`;
+    @keyframes slide-out {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(-10000000%);
+      }
+    }
+  `;
 
-const LinkDecoration = styled(Link)`
-  text-decoration: none;
-  margin: 3px;
-  width: 150px;
-  box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.8) inset;
-  display: flex;
-  align-items: center;
-  height: 100%;
-`;
+  const NavigationText = styled.span`
+    font-size: 25px;
+    color: rgb(0, 195, 238);
 
-function NavBar(props, { handleToggle }) {
+    flex-grow: 1;
+    text-align: center;
+    font-family: -apple-system, BShitMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  `;
+
+  const LinkDecoration = styled(Link)`
+    text-decoration: none;
+    margin: 3px;
+    width: 150px;
+    box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.8) inset;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    :hover {
+      transform: 1.5em;
+      box-shadow: 0 4px 8px 0 rgba(0, 256, 0, 0.8) inset,
+        0 6px 20px 0 rgba(0, 256, 0, 0.6);
+    }
+  `;
+
   return (
-    <Title changeToggle={handleToggle}>
+    <Title>
       <LinkDecoration to="/home">
         <NavigationText>
-          {props.language === "deutsch"
+          {language === "deutsch"
             ? deutsch.HomeLink
-            : props.language === "englisch"
+            : language === "englisch"
             ? englisch.HomeLink
-            : props.language === "rumänisch"
+            : language === "rumänisch"
             ? rumänisch.HomeLink
-            : props.language === "ungarisch"
+            : language === "ungarisch"
             ? ungarisch.HomeLink
-            : props.language === "französisch"
+            : language === "französisch"
             ? französisch.HomeLink
-            : props.language === "spanisch"
+            : language === "spanisch"
             ? spanisch.HomeLink
-            : props.language === "hebräisch"
+            : language === "hebräisch"
             ? hebräisch.HomeLink
             : "ciao bella"}
         </NavigationText>
       </LinkDecoration>
       <LinkDecoration to="/zimmer">
         <NavigationText>
-          {props.language === "deutsch"
+          {language === "deutsch"
             ? deutsch.ZimmerLink
-            : props.language === "englisch"
+            : language === "englisch"
             ? englisch.ZimmerLink
-            : props.language === "rumänisch"
+            : language === "rumänisch"
             ? rumänisch.ZimmerLink
-            : props.language === "ungarisch"
+            : language === "ungarisch"
             ? ungarisch.ZimmerLink
-            : props.language === "französisch"
+            : language === "französisch"
             ? französisch.ZimmerLink
-            : props.language === "spanisch"
+            : language === "spanisch"
             ? spanisch.ZimmerLink
-            : props.language === "hebräisch"
+            : language === "hebräisch"
             ? hebräisch.ZimmerLink
             : "ciao bella"}
         </NavigationText>
       </LinkDecoration>
       <LinkDecoration to="/gallery">
         <NavigationText>
-          {props.language === "deutsch"
+          {language === "deutsch"
             ? deutsch.GallerieLink
-            : props.language === "englisch"
+            : language === "englisch"
             ? englisch.GallerieLink
-            : props.language === "rumänisch"
+            : language === "rumänisch"
             ? rumänisch.GallerieLink
-            : props.language === "ungarisch"
+            : language === "ungarisch"
             ? ungarisch.GallerieLink
-            : props.language === "französisch"
+            : language === "französisch"
             ? französisch.GallerieLink
-            : props.language === "spanisch"
+            : language === "spanisch"
             ? spanisch.GallerieLink
-            : props.language === "hebräisch"
+            : language === "hebräisch"
             ? hebräisch.GallerieLink
             : "ciao bella"}
         </NavigationText>

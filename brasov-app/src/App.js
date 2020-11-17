@@ -18,10 +18,12 @@ function App() {
 
   const ToggleButton = styled.span`
     align-items: center;
+    background-color: papayawhip;
     padding: 10px;
     z-index: 400;
     justify-content: space-around;
     box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.8) inset;
+    cursor: pointer;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -121,7 +123,7 @@ function App() {
     display: flex;
   `;
 
-  const [isToggled, setToggled] = React.useState(true);
+  const [isToggled, setToggled] = React.useState(false);
   const [language, setlanguage] = React.useState("deutsch");
 
   console.log(language);
@@ -188,7 +190,7 @@ function App() {
         <ToggleButton onClick={() => setToggled(!isToggled)}>
           <h3>Menu →</h3>
         </ToggleButton>
-        <NavBar handleToggle={isToggled} language={language}></NavBar>
+        <NavBar language={language} handleToggle={isToggled}></NavBar>
       </MenuContainer>
       <Background>
         <Route exact path="/">

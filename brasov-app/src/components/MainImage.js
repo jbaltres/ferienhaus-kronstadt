@@ -7,7 +7,7 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-around;
   @media (max-width: 768px) {
-    margin: 0px;
+    margin-top: 30px;
   }
   @media (max-width: 350px) {
     margin-top: 55px;
