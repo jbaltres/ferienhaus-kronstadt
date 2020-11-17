@@ -24,7 +24,7 @@ export const deutsch = {
     "Im Winter läd sie unter anderem das anliegende Skigebiet zum Skifahren, oder zu einem wärmenden Glühschnaps, ein. Mehr über Braşov lernen Sie hier.",
   HomeLink: "Home",
   ZimmerLink: "Zimmer",
-  PreiseLink: "Preise",
+  GallerieLink: "Gallerie",
 };
 
 export const englisch = {
@@ -53,7 +53,7 @@ export const englisch = {
     "In winter, among other things, the adjacent ski area invites you to go skiing or to enjoy a warming glow schnapps. You can learn more about Braşov here.",
   HomeLink: "Home",
   ZimmerLink: "Rooms",
-  PreiseLink: "Prices",
+  GallerieLink: "Gallery",
 };
 
 export const rumänisch = {
@@ -81,7 +81,7 @@ export const rumänisch = {
     "Iarna, printre altele, zona de schi adiacentă vă invită să mergeți la schi sau să vă bucurați de o schnapps strălucitoare. Puteți afla mai multe despre Brașov aici.",
   HomeLink: "Home",
   ZimmerLink: "Camere",
-  PreiseLink: "Prețuri",
+  GallerieLink: "Gelerie",
 };
 
 export const spanisch = {
@@ -110,7 +110,7 @@ export const spanisch = {
     "En invierno, entre otras cosas, la zona de esquí adyacente le invita a esquiar o disfrutar de un cálido aguardiente. Puede obtener más información sobre Braşov aquí.",
   HomeLink: "Home",
   ZimmerLink: "Habitaciones",
-  PreiseLink: "Precios",
+  GallerieLink: "Galería",
 };
 export const französisch = {
   Feld1: "Personnes:",
@@ -138,7 +138,7 @@ export const französisch = {
     "En hiver, entre autres, le domaine skiable adjacent vous invite à faire du ski ou à profiter d'un schnaps réchauffant. Vous pouvez en savoir plus sur Braşov ici.",
   HomeLink: "Home",
   ZimmerLink: "Chambres",
-  PreiseLink: "Prix",
+  GallerieLink: "Galerie",
 };
 
 export const ungarisch = {
@@ -167,7 +167,7 @@ export const ungarisch = {
     "Télen többek között a szomszédos síterület meghívja Önt síelni vagy egy melegítő pálinkát elfogyasztani. Brassóról itt tudhat meg többet.",
   HomeLink: "Home",
   ZimmerLink: "Szoba",
-  PreiseLink: "Árak",
+  GallerieLink: "Képtár",
 };
 
 export const hebräisch = {
@@ -195,5 +195,5 @@ export const hebräisch = {
     "בחורף, בין היתר, אזור הסקי הצמוד מזמין אתכם לעשות סקי או ליהנות משנאפס זוהר מחמם. אתה יכול ללמוד עוד על Braşov כאן.",
   HomeLink: "בית",
   ZimmerLink: "חדרים",
-  PreiseLink: "מחירים",
+  GallerieLink: "גלריה",
 };

@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import Preise from "./pages/Preise";
-import Zimmer from "./pages/Zimmer";
+import Gallerie from "./pages/Gallerie";
 import MainImage from "./components/MainImage";
 import Header from "./components/Header";
 
@@ -197,10 +197,10 @@ function App() {
         <Route path="/home">
           <Home language={language} />
         </Route>
-        <Route path="/preise">
+        <Route path="/zimmer">
           <Preise language={language} />
         </Route>
-        <Route path="/zimmer" component={Zimmer} />
+        <Route path="/gallery" component={Gallerie} />
       </Background>
     </Router>
   );

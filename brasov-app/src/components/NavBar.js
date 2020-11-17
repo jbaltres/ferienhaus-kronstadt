@@ -91,22 +91,22 @@ function NavBar(props, { handleToggle }) {
             : "ciao bella"}
         </NavigationText>
       </LinkDecoration>
-      <LinkDecoration to="/preise">
+      <LinkDecoration to="/gallery">
         <NavigationText>
           {props.language === "deutsch"
-            ? deutsch.PreiseLink
+            ? deutsch.GallerieLink
             : props.language === "englisch"
-            ? englisch.PreiseLink
+            ? englisch.GallerieLink
             : props.language === "rumänisch"
-            ? rumänisch.PreiseLink
+            ? rumänisch.GallerieLink
             : props.language === "ungarisch"
-            ? ungarisch.PreiseLink
+            ? ungarisch.GallerieLink
             : props.language === "französisch"
-            ? französisch.PreiseLink
+            ? französisch.GallerieLink
             : props.language === "spanisch"
-            ? spanisch.PreiseLink
+            ? spanisch.GallerieLink
             : props.language === "hebräisch"
-            ? hebräisch.PreiseLink
+            ? hebräisch.GallerieLink
             : "ciao bella"}
         </NavigationText>
       </LinkDecoration>
