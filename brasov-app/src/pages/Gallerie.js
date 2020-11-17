@@ -16,12 +16,15 @@ const Card = styled.span`
 const Ha2 = styled.h2`
   display: flex;
   justify-content: center;
-  color: blueviolet;
+  align-items: center;
+  color: rgb(0, 160, 238);
+  box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.2) inset;
+  height: 2em;
 `;
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 750, itemsToShow: 2 },
+  { width: 750, itemsToShow: 2, itemsToScroll: 2 },
 ];
 
 export default function Gallerie() {
