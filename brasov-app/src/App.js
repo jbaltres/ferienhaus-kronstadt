@@ -99,9 +99,9 @@ function App() {
     z-index: 2200;
     position: fixed;
     flex-wrap: wrap;
-    margin-top: 35px;
+    margin-top: 60px;
     @media (max-width: 350px) {
-      margin-top: 75px;
+      margin-top: 100px;
     }
 
     animation-name: bounce;
@@ -120,7 +120,12 @@ function App() {
       }
     }
   `;
- 
+
+  
+
+  const HeaderWrapper = styled.div`
+    display: flex;
+  `;
 
   const [language, setlanguage] = React.useState("deutsch");
 
@@ -128,7 +133,10 @@ function App() {
 
   return (
     <Router>
+      <HeaderWrapper onClick={(e) => setVisible(!visible)}>
         <Header language={language} />
+          
+      </HeaderWrapper>
       <Flagwrapper onClick={(e) => setVisible(!visible)}>
         <Flag
           delaytime="0.1s"

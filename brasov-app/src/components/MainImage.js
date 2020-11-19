@@ -6,12 +6,6 @@ const HeaderContainer = styled.div`
   height: 400px;
   display: flex;
   justify-content: space-around;
-  @media (max-width: 768px) {
-    margin-top: 30px;
-  }
-  @media (max-width: 350px) {
-    margin-top: 55px;
-  }
 
 `;
 
