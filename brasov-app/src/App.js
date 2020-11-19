@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import Preise from "./pages/Preise";
+import Test from "./pages/Test";
 import Gallerie from "./pages/Gallerie";
 import MainImage from "./components/MainImage";
 import Header from "./components/Header";
@@ -28,7 +29,7 @@ function App() {
       align-items: flex-start;
     }
 
-    background-color: rgb(0, 0, 0);
+   
     z-index: 400;
     justify-content: space-around;
     @media (max-width: 750px) {
@@ -45,7 +46,23 @@ function App() {
     border-image: linear-gradient(to right, rgba(37, 206, 197, 1), green) 50 15%;
     display: flex;
     align-items: center;
-    background-color: black;
+    
+    background: linear-gradient(271deg, #0de1b4, #ffb35a);
+    
+    animation: CardBackground 5s ease infinite;
+    background-size: 400% 400%;
+
+  @keyframes CardBackground {
+    0% {
+      background-position: 0% 51%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 51%;
+    }
+  }
   `;
 
   const Flag = styled.img`
@@ -213,6 +230,7 @@ function App() {
           <Preise language={language} />
         </Route>
         <Route path="/gallery" component={Gallerie} />
+        <Route path="/test" component={Test} />
       </Background>
     </Router>
   );

@@ -16,7 +16,7 @@ function NavBar({ language, handleToggle }) {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: rgb(0, 0, 0);
+    
     margin: 0;
     z-index: 400;
     justify-content: space-around;
@@ -25,7 +25,6 @@ function NavBar({ language, handleToggle }) {
       align-items: flex-start;
     }
     flex-grow: 1;
-    
   `;
 
   const NavigationText = styled.span`
@@ -49,13 +48,17 @@ function NavBar({ language, handleToggle }) {
 
     :hover {
       transform: 1.5em;
-      box-shadow: 0 4px 8px 0 rgba(0, 256, 0, 0.8) inset,
-        0 6px 20px 0 rgba(0, 256, 0, 0.6);
+      box-shadow: 0 4px 8px 0 rgb(0,195,238) inset,
+        0 6px 20px 0 rgb(0,195,238);
     }
   `;
 
+
+
+ 
   return (
     <Title>
+      
       <LinkDecoration to="/home">
         <NavigationText>
           {language === "deutsch"

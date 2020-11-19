@@ -13,7 +13,7 @@ flex-direction: column;
 
 const Image = styled.img`
 width: 90%;
-height: 200px
+height: 200px;
 border-radius: 30%;
 margin: 0px auto;
 `;
