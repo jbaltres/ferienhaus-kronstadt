@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+const CardForCarousel = ({ sorc, bgcolor }) => {
+  
 const CardStyle = styled.div`
   width: 100%;
   height: 400px;
@@ -16,10 +18,10 @@ const CardStyle = styled.div`
   margin-left: 15px;
   border-radius: 10px;
 
-  background: linear-gradient(316deg, #09eab0, #3c2596);
+  background: ${bgcolor};
   background-size: 400% 400%;
 
-  animation: CardBackground 17s ease infinite;
+  animation: CardBackground 5s ease infinite;
 
   @keyframes CardBackground {
     0% {
@@ -44,10 +46,12 @@ const CardImage = styled.img`
   }
 `;
 
-const CardForCarousel = ({ sorc }) => (
+
+
+return(
   <CardStyle>
     <CardImage src={sorc}></CardImage>
   </CardStyle>
-);
+);}
 
 export default CardForCarousel;
