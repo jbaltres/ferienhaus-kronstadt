@@ -12,7 +12,7 @@ const HeaderContainer = styled.div`
   @media (max-width: 350px) {
     margin-top: 55px;
   }
-  margin: 10px 0px;
+
 `;
 
 const HeadImage = styled.img`

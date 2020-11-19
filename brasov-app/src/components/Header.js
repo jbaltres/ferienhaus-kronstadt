@@ -6,21 +6,19 @@ function Header(props) {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(315deg, #ffad5c,#1ed0bb);
     margin: 0;
     border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgba(37, 206, 197, 1), black) 50 15%;
     z-index: 3200;
     justify-content: space-around;
     width: 100vw;
     position: fixed;
     inline-size: -webkit-fill-available;
+    opacity:0.9;
   `;
 
   const Headline = styled.span`
     font-size: 25px;
-    color: rgb(0, 195, 238);
     font-family: cursive;
     flex-grow: 1;
     text-align: center;

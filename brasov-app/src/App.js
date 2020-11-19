@@ -37,32 +37,17 @@ function App() {
       align-items: flex-start;
     }
     font-size: 25px;
-    color: rgb(0, 195, 238);
+    color: rgba(41,49,51,0.8);
   `;
 
   const MenuContainer = styled.div`
     border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgba(37, 206, 197, 1), green) 50 15%;
     display: flex;
     align-items: center;
     
-    background: linear-gradient(271deg, #0de1b4, #ffb35a);
+    background: linear-gradient(45deg, #ffad5c,#1ed0bb);
     
-    animation: CardBackground 5s ease infinite;
-    background-size: 400% 400%;
-
-  @keyframes CardBackground {
-    0% {
-      background-position: 0% 51%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 51%;
-    }
-  }
+  
   `;
 
   const Flag = styled.img`
@@ -112,7 +97,6 @@ function App() {
     width: 100%;
     justify-content: flex-start;
     z-index: 2200;
-    background-color: rgba(189, 195, 199, 0.7);
     position: fixed;
     flex-wrap: wrap;
     margin-top: 35px;
@@ -136,22 +120,7 @@ function App() {
       }
     }
   `;
-
-  const CurrentFlag = styled.img`
-    display: flex;
-    width: 28px;
-    height: 28px;
-    margin-right: 6%;
-    margin-left: 5px;
-  `;
-
-  const StyledLabel = styled.label`
-    margin-left: 30px;
-  `;
-
-  const HeaderWrapper = styled.div`
-    display: flex;
-  `;
+ 
 
   const [language, setlanguage] = React.useState("deutsch");
 
@@ -159,26 +128,7 @@ function App() {
 
   return (
     <Router>
-      <HeaderWrapper onClick={(e) => setVisible(!visible)}>
         <Header language={language} />
-        <StyledLabel onClick={(e) => setVisible(!visible)}>
-          {language === "deutsch" ? (
-            <CurrentFlag src="https://cdn.countryflags.com/thumbs/germany/flag-round-250.png"></CurrentFlag>
-          ) : language === "englisch" ? (
-            <CurrentFlag src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png"></CurrentFlag>
-          ) : language === "rumänisch" ? (
-            <CurrentFlag src="https://cdn.countryflags.com/thumbs/romania/flag-button-round-250.png"></CurrentFlag>
-          ) : language === "spanisch" ? (
-            <CurrentFlag src="https://cdn.countryflags.com/thumbs/spain/flag-button-round-250.png"></CurrentFlag>
-          ) : language === "ungarisch" ? (
-            <CurrentFlag src="https://cdn.countryflags.com/thumbs/hungary/flag-button-round-250.png"></CurrentFlag>
-          ) : language === "französisch" ? (
-            <CurrentFlag src="https://cdn.countryflags.com/thumbs/france/flag-3d-round-250.png"></CurrentFlag>
-          ) : (
-            <CurrentFlag src="https://cdn.countryflags.com/thumbs/israel/flag-3d-round-250.png"></CurrentFlag>
-          )}
-        </StyledLabel>
-      </HeaderWrapper>
       <Flagwrapper onClick={(e) => setVisible(!visible)}>
         <Flag
           delaytime="0.1s"

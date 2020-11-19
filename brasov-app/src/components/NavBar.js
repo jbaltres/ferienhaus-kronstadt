@@ -29,27 +29,29 @@ function NavBar({ language, handleToggle }) {
 
   const NavigationText = styled.span`
     font-size: 25px;
-    color: rgb(0, 195, 238);
-
+    color: rgba(41,49,51,0.8);
     flex-grow: 1;
     text-align: center;
-    font-family: -apple-system, BShitMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    :hover{
+      color: white;
+    }
   `;
 
   const LinkDecoration = styled(Link)`
     text-decoration: none;
     margin: 3px;
     width: 150px;
-    box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.8) inset;
+    box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.4) inset;
     display: flex;
     align-items: center;
     height: 100%;
+    
 
     :hover {
       transform: 1.5em;
       box-shadow: 0 4px 8px 0 rgb(0,195,238) inset,
         0 6px 20px 0 rgb(0,195,238);
+      background: linear-gradient(45deg,#1ed0bb,#ffad5c);
     }
   `;
 
