@@ -23,12 +23,15 @@ export const deutsch = {
     "Aus unserer Unterkunft gelangen Sie schnell ins Stadtzentrum von Kronstadt/Braşov, wo Sie zahlreiche Einkaufsmöglichkeiten und Gastronomien mit landestypischen Spezialitäten erwarten.",
   Text3:
     "Von Kronstadt aus gelangen Sie schnell zu den höchsten Spitzen der Karpaten, die waldreichste Gegend Europas, für welche das Land bekannt ist.",
-  Text4: "Ein Super Platz für alle Wanderfreunde.",
+  Text4: "Ein super Platz für alle Wanderfreunde.",
   Text5:
-    "Im Winter läd sie unter anderem das anliegende Skigebiet zum Skifahren, oder zu einem wärmenden Glühschnaps, ein.",
+    "Im Winter läd sie unter anderem das anliegende Skigebiet zum Skifahren, oder zu einem wärmenden Glühschnaps ein.",
   HomeLink: "Home",
   ZimmerLink: "Zimmer",
   GallerieLink: "Gallerie",
+  AlertText1:"Dieses Zimmer ist online momentan nicht verfügbar.",
+  AlertText2:"Anfragen & Zimmerbuchungen unter:",
+  ZurückButton:"Zurück"
 };
 
 export const englisch = {
@@ -62,6 +65,9 @@ export const englisch = {
   HomeLink: "Home",
   ZimmerLink: "Rooms",
   GallerieLink: "Gallery",
+  AlertText1:"This room is currently unavailable online.",
+  AlertText2:"Please call the number for inquiries & room bookings:",
+  ZurückButton:"Back"
 };
 
 export const rumänisch = {
@@ -94,6 +100,9 @@ export const rumänisch = {
   HomeLink: "Home",
   ZimmerLink: "Camere",
   GallerieLink: "Gelerie",
+  AlertText1:"Această cameră nu este momentan disponibilă online.",
+  AlertText2:"Întrebări și rezervări de camere la:",
+  ZurückButton:"Înapoi"
 };
 
 export const spanisch = {
@@ -127,6 +136,9 @@ export const spanisch = {
   HomeLink: "Home",
   ZimmerLink: "Habitaciones",
   GallerieLink: "Galería",
+  AlertText1:"Actualmente, esta sala no está disponible en línea.",
+  AlertText2:"Consultas y reservas de habitaciones en:",
+  ZurückButton:"Atrás"
 };
 export const französisch = {
   Feld1: "Personnes:",
@@ -159,6 +171,9 @@ export const französisch = {
   HomeLink: "Home",
   ZimmerLink: "Chambres",
   GallerieLink: "Galerie",
+  AlertText1:"Cette chambre n'est actuellement pas disponible en ligne.",
+  AlertText2:"Demandes de renseignements et réservations de chambres à:",
+  ZurückButton:"Retour"
 };
 
 export const ungarisch = {
@@ -192,6 +207,9 @@ export const ungarisch = {
   HomeLink: "Home",
   ZimmerLink: "Szoba",
   GallerieLink: "Képtár",
+  AlertText1:"Ez a szoba jelenleg nem érhető el online.",
+  AlertText2:"Érdeklődések és szobafoglalások itt:",
+  ZurückButton:"Vissza"
 };
 
 export const hebräisch = {
@@ -224,4 +242,7 @@ export const hebräisch = {
   HomeLink: "בית",
   ZimmerLink: "חדרים",
   GallerieLink: "גלריה",
+  AlertText1:"חדר זה אינו זמין כעת באינטרנט.",
+  AlertText2:"פניות והזמנות חדרים ב:",
+  ZurückButton:"חזור"
 };
