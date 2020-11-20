@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 import CardForCarousel from "../components/CardForCarousel";
+import Bild1 from "../pictures/Bild1.jpg"
+import Bild2 from "../pictures/Bild2.jpg"
+import Bild5 from "../pictures/Bild5.jpg"
+import Bild8 from "../pictures/Bild8.jpg"
+import Umriss from "../pictures/Umriss.jpg"
 
 const Card = styled.span`
   display: flex;
@@ -60,9 +65,12 @@ export default function Gallerie() {
       <Ha2>Appartment 2</Ha2>
       <Card>
         <Carousel breakPoints={breakPoints}>
-          <CardForCarousel sorc="https://a0.muscache.com/im/pictures/1c24f67e-9944-4b61-b1ab-b71be2b32619.jpg?im_w=1200" bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
-          <CardForCarousel sorc="https://a0.muscache.com/im/pictures/60d16fb7-35e2-4291-9193-5db96c0c92b8.jpg?im_w=1440" bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
-          <CardForCarousel sorc="https://a0.muscache.com/im/pictures/ba4a6185-c311-4a60-88c9-e34854245892.jpg?im_w=1440" bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
+          <CardForCarousel sorc={Bild1} bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
+          <CardForCarousel sorc={Bild2} bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
+          <CardForCarousel sorc={Bild5} bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
+          <CardForCarousel sorc={Bild8} bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
+          <CardForCarousel sorc={Umriss} bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
+
         </Carousel>
       </Card>
       <br></br>
