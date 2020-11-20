@@ -72,7 +72,7 @@ function App() {
     justify-content: flex-start;
     z-index: 2200;
     position: fixed;
-    margin-top: 60px;
+    margin-top: 55px;
     @media (max-width: 333px) {
       margin-top: 100px;
       flex-wrap: wrap;

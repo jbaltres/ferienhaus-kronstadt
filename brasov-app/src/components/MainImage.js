@@ -5,10 +5,11 @@ const HeaderContainer = styled.div`
   width: 100%;
   height: 400px;
   display: flex;
-  margin-top:60px;
+  padding-top:60px;
+  margin-bottom:5px;
   justify-content: space-evenly;
   @media (max-width: 333px) {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 `;
 
