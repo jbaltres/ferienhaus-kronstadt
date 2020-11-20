@@ -5,8 +5,11 @@ const HeaderContainer = styled.div`
   width: 100%;
   height: 400px;
   display: flex;
-  justify-content: space-around;
-
+  margin-top:60px;
+  justify-content: space-evenly;
+  @media (max-width: 333px) {
+    margin-top: 100px;
+  }
 `;
 
 const HeadImage = styled.img`

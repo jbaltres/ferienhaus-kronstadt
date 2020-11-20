@@ -5,58 +5,31 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import Preise from "./pages/Preise";
-import Test from "./pages/Test";
 import Gallerie from "./pages/Gallerie";
 import MainImage from "./components/MainImage";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 
 function App() {
   const [visible, setVisible] = React.useState(true);
-  const [isToggled, setToggled] = React.useState(false);
-  console.log(visible);
   const Background = styled.div`
     background: papayawhip;
-  `;
-
-  const ToggleButton = styled.span`
-    margin-left: 13px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-
-    @media (max-width: 500px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-   
-    z-index: 400;
-    justify-content: space-around;
-    @media (max-width: 750px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    font-size: 25px;
-    color: rgba(41,49,51,0.8);
   `;
 
   const MenuContainer = styled.div`
     border-width: 2px;
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
     background: linear-gradient(45deg, #ffad5c,#1ed0bb);
-    
-  
   `;
 
   const Flag = styled.img`
     width: 30px;
     height: 30px;
     margin: 5px 10px;
-
     animation-name: bounce2;
-    animation-duration: 2s;
+    animation-duration: ${(props) => props.duration || "1s"};
     animation-iteration-count: 1;
     animation-delay: ${(props) => props.delaytime || "0.4s"};
     animation-timing-function: linear;
@@ -94,14 +67,15 @@ function App() {
 
   const Flagwrapper = styled.div`
     display: ${visible ? "none" : "flex"};
+    background-color:rgba(189,195,199,0.7);
     width: 100%;
     justify-content: flex-start;
     z-index: 2200;
     position: fixed;
-    flex-wrap: wrap;
     margin-top: 60px;
-    @media (max-width: 350px) {
+    @media (max-width: 333px) {
       margin-top: 100px;
+      flex-wrap: wrap;
     }
 
     animation-name: bounce;
@@ -121,11 +95,13 @@ function App() {
     }
   `;
 
-  
-
   const HeaderWrapper = styled.div`
     display: flex;
   `;
+
+const FooterWrapper = styled.div`
+display: flex;
+`;
 
   const [language, setlanguage] = React.useState("deutsch");
 
@@ -134,12 +110,13 @@ function App() {
   return (
     <Router>
       <HeaderWrapper onClick={(e) => setVisible(!visible)}>
-        <Header language={language} />
+        <Header language={language} visible={!visible} />
           
       </HeaderWrapper>
       <Flagwrapper onClick={(e) => setVisible(!visible)}>
         <Flag
           delaytime="0.1s"
+          duration="1s"
           onClick={() => setlanguage("deutsch")}
           src="https://cdn.countryflags.com/thumbs/germany/flag-round-250.png"
         ></Flag>
@@ -150,6 +127,7 @@ function App() {
         ></Flag>
         <Flag
           delaytime="0.5s"
+          duration="1.5s"
           onClick={() => setlanguage("englisch")}
           src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png"
         ></Flag>
@@ -163,18 +141,19 @@ function App() {
         ></Flag>
         <Flag
           delaytime="0.3s"
+          duration="1.5s"
           onClick={() => setlanguage("französisch")}
           src="https://cdn.countryflags.com/thumbs/france/flag-3d-round-250.png"
         ></Flag>
         <Flag
           delaytime="0.25s"
+          duration=".5s"
           onClick={() => setlanguage("hebräisch")}
           src="https://cdn.countryflags.com/thumbs/israel/flag-3d-round-250.png"
         ></Flag>
       </Flagwrapper>
       <MainImage></MainImage>
       <MenuContainer>
-        <ToggleButton onClick={() => setToggled(!isToggled)}>Menu</ToggleButton>
           <NavBar language={language}></NavBar>    
       </MenuContainer>
       <Background>
@@ -188,7 +167,9 @@ function App() {
           <Preise language={language} />
         </Route>
         <Route path="/gallery" component={Gallerie} />
-        <Route path="/test" component={Test} />
+         <FooterWrapper>
+        <Footer /> 
+      </FooterWrapper>
       </Background>
     </Router>
   );

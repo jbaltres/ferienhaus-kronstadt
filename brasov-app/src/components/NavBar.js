@@ -11,18 +11,17 @@ import {
   französisch,
 } from "../languages/api";
 
-function NavBar({ language, handleToggle }) {
+function NavBar({ language }) {
   const Title = styled.span`
     display: flex;
     align-items: center;
     padding: 10px;
-    
     margin: 0;
     z-index: 400;
     justify-content: space-around;
-    @media (max-width: 750px) {
+    @media (max-width: 550px) {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
     flex-grow: 1;
   `;
@@ -42,16 +41,18 @@ function NavBar({ language, handleToggle }) {
     margin: 3px;
     width: 150px;
     box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.4) inset;
+    border-radius:7px;
+    padding:3px;
     display: flex;
     align-items: center;
     height: 100%;
     
-
     :hover {
-      transform: 1.5em;
-      box-shadow: 0 4px 8px 0 rgb(0,195,238) inset,
-        0 6px 20px 0 rgb(0,195,238);
       background: linear-gradient(45deg,#1ed0bb,#ffad5c);
+    }
+
+    @media (max-width: 550px) {
+      width: 80%;
     }
   `;
 
