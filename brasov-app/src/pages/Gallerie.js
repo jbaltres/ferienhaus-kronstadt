@@ -46,7 +46,7 @@ export default function Gallerie() {
           <CardForCarousel sorc="https://a0.muscache.com/im/pictures/491a0c4d-d129-414d-bf7d-8e1e10cb509e.jpg?im_w=1440" bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
           <CardForCarousel sorc="https://a0.muscache.com/im/pictures/bae115d3-34ab-42b0-b007-7235db78a670.jpg?im_w=1440" bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
           <CardForCarousel sorc="https://a0.muscache.com/im/pictures/69c4c6d7-48d7-4338-8208-bf5c358effb9.jpg?im_w=1440" bgcolor="linear-gradient(316deg, #fd6c6c, #ffb35a)"/>
-        </Carousel>
+        </Carousel> 
       </Card>
       <br></br>
       <br></br>
