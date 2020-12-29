@@ -28,11 +28,11 @@ function NavBar({ language }) {
 
   const NavigationText = styled.span`
     font-size: 25px;
-    color: rgba(41,49,51,0.8);
+    color: white;
     flex-grow: 1;
     text-align: center;
     :hover{
-      color: white;
+      color: rgba(41,49,51,0.8);
     }
   `;
 

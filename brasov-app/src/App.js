@@ -14,7 +14,6 @@ import Footer from "./components/Footer";
 function App() {
   const [visible, setVisible] = React.useState(true);
   const Background = styled.div`
-    background: papayawhip;
   `;
 
   const MenuContainer = styled.div`

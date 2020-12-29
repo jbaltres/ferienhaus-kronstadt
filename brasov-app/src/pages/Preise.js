@@ -6,7 +6,6 @@ import languages from "../languages/api";
 
 export default function Preise({ language }) {
   const Site = styled.div`
-    background: papayawhip;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
