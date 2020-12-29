@@ -155,6 +155,7 @@ function Apartment({
     border-radius: 5px;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 
     :hover {
       transform: scale(0.9);
@@ -225,7 +226,7 @@ function Apartment({
       </ListItem>
       {buchbar ? (
         <LinkButton>
-          <Anker href={link}>{languages[language].AirBnbButton}}</Anker>
+          <Anker href={link}>{languages[language].AirBnbButton}</Anker>
         </LinkButton>
       ) : (
         <>
