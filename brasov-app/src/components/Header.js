@@ -34,6 +34,7 @@ function Header({language, visible}) {
     animation-name: turn;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    cursor: pointer;
 
   @keyframes turn {
       0% {

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Slider from "../components/Slider";
 import Bild5 from "../pictures/Bild5.jpg";
 import Apartment from "../components/Wohnungen";
 import languages from "../languages/api";
