@@ -20,7 +20,13 @@ function App() {
     border-width: 2px;
     display: flex;
     align-items: center; 
-    background: linear-gradient(45deg, #ffad5c,#1ed0bb);
+    background: linear-gradient(45deg,#1ed0bb,#ffad5c);
+
+    @media (min-width: 550px) {
+      position:sticky;
+    top:55px;
+    z-index:999;
+    }
   `;
 
   const Flag = styled.img`

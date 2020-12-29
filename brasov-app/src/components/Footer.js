@@ -11,7 +11,6 @@ function Footer() {
     border-width: 2px;
     justify-content: space-around;
     width: 100vw;
-    opacity:0.9;
     
     @media (max-width: 500px) {
       font-size:0.7em;
@@ -20,24 +19,33 @@ function Footer() {
   `;
 
   const Tel = styled.span`
-    
-    font-family: cursive;
+    color:white;
+    font-size:1.1em;
     flex-grow: 1;
     text-align: center;
   `;
   const Anspr = styled.span`
-  
-  font-family: cursive;
+  font-size:1.1em;
+   color:white;
   flex-grow: 1;
   text-align: center;
 `;
 const Adress = styled.a`
-    font-family: cursive;
-    flex-grow: 1;
-    text-align: center;
-    text-decoration:none;
+ color:white;
+ font-size:1.1em;
+  flex-grow: 1;
+  justify-content:center;
+   text-decoration: none;
+    box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.4) inset;
+    border-radius:7px;
+    padding:3px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
     :hover {
-      background: linear-gradient(45deg,#ffad5c,#1ed0bb);}
+      background: linear-gradient(45deg,#1ed0bb,#ffad5c);
+    }
       
   `;
 

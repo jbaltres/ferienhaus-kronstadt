@@ -19,6 +19,7 @@ function NavBar({ language }) {
     margin: 0;
     z-index: 400;
     justify-content: space-around;
+
     @media (max-width: 550px) {
       flex-direction: column;
       align-items: center;
@@ -55,9 +56,6 @@ function NavBar({ language }) {
       width: 80%;
     }
   `;
-
-
-
  
   return (
     <Title>

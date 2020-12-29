@@ -14,12 +14,11 @@ function Header({language, visible}) {
     width: 100vw;
     position: fixed;
     inline-size: -webkit-fill-available;
-    opacity:0.9;
   `;
 
   const Headline = styled.span`
     font-size: 25px;
-    font-family: cursive;
+    color:white;
     flex-grow: 1;
     text-align: center;
   `;
