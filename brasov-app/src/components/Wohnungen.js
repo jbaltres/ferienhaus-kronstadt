@@ -79,7 +79,7 @@ function Apartment({
   link,
   colors,
   buchbar,
-  price,
+  price
 }) {
   const [show, setShow] = React.useState(true);
   const [clickable, setClickable] = React.useState(true);
@@ -146,15 +146,18 @@ function Apartment({
   `;
 
   const LinkButton = styled.button`
-    background: #31a3cb;
+    background: hsla(300, 15%, 25%, 0.4);
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 3px;
     display: inline-block;
-    max-width: 150px;
     margin: 10px auto;
+    max-width: 80%; 
     border-radius: 5px;
     text-transform: uppercase;
     border: none;
+    box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.4) inset;
+    align-items: center;
+    height: 100%;
     cursor: pointer;
 
     :hover {
@@ -162,6 +165,10 @@ function Apartment({
       box-shadow: 0 4px 8px 0 rgba(0, 195, 238, 1),
         0 6px 20px 0 rgba(0, 195, 238, 1);
     }
+
+    @media (max-width: 350px) {
+      max-width:200px;
+         }
   `;
 
   const Anker = styled.a`
@@ -212,6 +219,12 @@ function Apartment({
       </ListItem>
       <ListItem>
         <b>Netflix:</b>
+        <span role="img" aria-label="Yes">
+          ✔️
+        </span>{" "}
+      </ListItem>
+      <ListItem>
+        <b>Wi-Fi:</b>
         <span role="img" aria-label="Yes">
           ✔️
         </span>{" "}

@@ -27,7 +27,7 @@ export default function Preise({ language }) {
         title="Apartment I"
         pax="2-4"
         rooms={2}
-        phone="02261 - 608317"
+        phone="Tel: ☏ 02261 - 59694"
         link="https://www.airbnb.de/rooms/30269340?source_impression_id=p3_1601834562_KoGO5jV8I6w0ewSM"
         colors="linear-gradient(316deg, #fd6c6c, #ffb35a)"
         buchbar={true}
@@ -40,7 +40,7 @@ export default function Preise({ language }) {
         title="GARSONIERA"
         pax="1-2"
         rooms={2}
-        phone="02261 - 608317"
+        phone="Tel: ☏ 02261 - 59694"
         link="https://www.airbnb.de/rooms/34850424?source_impression_id=p3_1601834588_OEdf7%2BUXKmqAkEo2"
         colors="linear-gradient(316deg, #0de1b4, #3297d0)"
         buchbar={true}
@@ -53,10 +53,10 @@ export default function Preise({ language }) {
         title="Apartment II"
         pax="2-4"
         rooms={1}
-        phone="02261 - 608317"
-        link=""
+        phone="Tel: ☏ 02261 - 59694"        
+        link="https://www.airbnb.de/rooms/47147606?source_impression_id=p3_1609255925_MxcmN3qMkADoCeG2&guests=1&adults=1"
         colors="linear-gradient(316deg, #fd6c6c, #ffb35a)"
-        buchbar={false}
+        buchbar={true}
         price="Feld12APPII"
       />
     </Site>
