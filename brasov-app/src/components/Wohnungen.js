@@ -57,7 +57,9 @@ function Apartment({
   `;
   const Phone = styled.div`
     display: none;
-    background-color: rgba(41, 49, 51, 0.6);
+    position:absolute;
+    bottom:15px;
+    background-color: rgba(41, 49, 51, 0.8);
     width: fit-content;
     border-radius: 10px;
     padding: 3px 10px;
@@ -92,7 +94,7 @@ function Apartment({
     border: none;
     box-shadow: -6px -9px 22px hsla(300, 15%, 25%, 0.4) inset;
     align-items: center;
-    height: 100%;
+    height: 60px;
     cursor: pointer;
 
     :hover {
