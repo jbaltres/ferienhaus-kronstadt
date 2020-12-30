@@ -37,8 +37,13 @@ function App() {
   `;
 
   const Freepik = styled.div`
-  font-size:0.3em;
+  font-size:0.1em;
+  color:rgba(0,0,0,0.2)
   `;
+
+const FreepikLink = styled.span`
+text-decoration:none;
+`;
 
   const Flag = styled.img`
     width: 30px;
@@ -183,7 +188,7 @@ display: flex;
           <Preise language={language} />
         </Route>
         <Route path="/gallery" component={Gallerie} />
-        <Freepik>Icons erstellt von <a href="https://www.flaticon.com/de/autoren/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></Freepik>
+        <Freepik>Icons erstellt von <FreepikLink href="https://www.flaticon.com/de/autoren/freepik" title="Freepik">Freepik</FreepikLink> from <FreepikLink href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</FreepikLink></Freepik>
          <FooterWrapper>
         <Footer /> 
       </FooterWrapper>

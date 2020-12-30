@@ -45,10 +45,10 @@ const Adress = styled.a`
     
     :hover {
       background: linear-gradient(45deg,#1ed0bb,#ffad5c);
+      color: rgba(41,49,51,0.8);
     }
       
   `;
-
 
   return (
     <Title>

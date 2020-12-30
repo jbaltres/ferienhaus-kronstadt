@@ -23,10 +23,10 @@ export const deutsch = {
   Text2:
     "Aus unserer Unterkunft gelangen Sie schnell ins Stadtzentrum von Kronstadt/Braşov, wo Sie zahlreiche Einkaufsmöglichkeiten und Gastronomien mit landestypischen Spezialitäten erwarten.",
   Text3:
-    "Von Kronstadt aus gelangen Sie schnell zu den höchsten Spitzen der Karpaten, die waldreichste Gegend Europas, für welche das Land bekannt ist.",
+    "Von Kronstadt aus ist es nicht weit zu den höchsten Spitzen der Karpaten, die waldreichste Region Europas, für welche das Land bekannt ist.",
   Text4: "Ein super Platz für alle Wanderfreunde.",
   Text5:
-    "Im Winter läd sie unter anderem das anliegende Skigebiet zum Skifahren, oder zu einem wärmenden Glühschnaps ein.",
+    "Im Winter läd Sie unter anderem das örtliche Skigebiet zum Skifahren, oder zu einem wärmenden Glühschnaps ein.",
   HomeLink: "Home",
   ZimmerLink: "Zimmer",
   GallerieLink: "Gallerie",
@@ -98,7 +98,7 @@ export const rumänisch = {
     "De la Brașov puteți ajunge rapid pe cele mai înalte vârfuri ale Munților Carpați, cea mai împădurită zonă din Europa pentru care țara este cunoscută.",
   Text4: "Un loc minunat pentru toți excursioniștii.",
   Text5:
-    "Iarna, printre altele, zona de schi adiacentă vă invită să mergeți la schi sau să vă bucurați de o schnapps strălucitoare.",
+    "Iarna, printre altele, zona de schi adiacentă vă invită să mergeți la schi sau să vă bucurați de o ţuica fiartă.",
   HomeLink: "Home",
   ZimmerLink: "Camere",
   GallerieLink: "Gelerie",
@@ -169,9 +169,9 @@ export const französisch = {
     "Depuis notre hébergement, vous pouvez rejoindre rapidement le centre-ville de Kronstadt / Braşov, où vous trouverez de nombreux commerces et restaurants proposant des spécialités locales typiques.",
   Text3:
     "De Brasov, vous pouvez rapidement atteindre les plus hauts sommets des Carpates, la région la plus boisée d'Europe pour laquelle le pays est connu.",
-  Text4: "Un endroit idéal pour tous les randonneurs.",
+  Text4: "Un endroit idéal pour tous les amateurs de randonnée.",
   Text5:
-    "En hiver, entre autres, le domaine skiable adjacent vous invite à faire du ski ou à profiter d'un schnaps réchauffant.",
+    "En hiver, entre autres, le domaine skiable adjacent vous invite à faire practique du ski ou à profiter d'un schnaps réchauffant.",
   HomeLink: "Home",
   ZimmerLink: "Chambres",
   GallerieLink: "Galerie",
@@ -278,10 +278,10 @@ const languages = {
     Text2:
       "Aus unserer Unterkunft gelangen Sie schnell ins Stadtzentrum von Kronstadt/Braşov, wo Sie zahlreiche Einkaufsmöglichkeiten und Gastronomien mit landestypischen Spezialitäten erwarten.",
     Text3:
-      "Von Kronstadt aus gelangen Sie schnell zu den höchsten Spitzen der Karpaten, die waldreichste Gegend Europas, für welche das Land bekannt ist.",
+      "Von Kronstadt aus ist es nicht weit zu den höchsten Spitzen der Karpaten, die waldreichste Region Europas, für welche das Land bekannt ist.",
     Text4: "Ein super Platz für alle Wanderfreunde.",
     Text5:
-      "Im Winter läd sie unter anderem das anliegende Skigebiet zum Skifahren, oder zu einem wärmenden Glühschnaps ein.",
+      "Im Winter läd Sie unter anderem das örtliche Skigebiet zum Skifahren, oder zu einem wärmenden Glühschnaps ein.",
     HomeLink: "Home",
     ZimmerLink: "Zimmer",
     GallerieLink: "Gallerie",
@@ -354,7 +354,7 @@ const languages = {
       "De la Brașov puteți ajunge rapid pe cele mai înalte vârfuri ale Munților Carpați, cea mai împădurită zonă din Europa pentru care țara este cunoscută.",
     Text4: "Un loc minunat pentru toți excursioniștii.",
     Text5:
-      "Iarna, printre altele, zona de schi adiacentă vă invită să mergeți la schi sau să vă bucurați de o schnapps strălucitoare.",
+      "Iarna, printre altele, zona de schi adiacentă vă invită să mergeți la schi sau să vă bucurați de o ţuica fiartă.",
     HomeLink: "Home",
     ZimmerLink: "Camere",
     GallerieLink: "Gelerie",
@@ -425,9 +425,9 @@ const languages = {
       "Depuis notre hébergement, vous pouvez rejoindre rapidement le centre-ville de Kronstadt / Braşov, où vous trouverez de nombreux commerces et restaurants proposant des spécialités locales typiques.",
     Text3:
       "De Brasov, vous pouvez rapidement atteindre les plus hauts sommets des Carpates, la région la plus boisée d'Europe pour laquelle le pays est connu.",
-    Text4: "Un endroit idéal pour tous les randonneurs.",
+    Text4: "Un endroit idéal pour tous les amateurs de randonnée.",
     Text5:
-      "En hiver, entre autres, le domaine skiable adjacent vous invite à faire du ski ou à profiter d'un schnaps réchauffant.",
+      "En hiver, entre autres, le domaine skiable adjacent vous invite à faire practique practique du ski ou à profiter d'un schnaps réchauffant.",
     HomeLink: "Home",
     ZimmerLink: "Chambres",
     GallerieLink: "Galerie",
