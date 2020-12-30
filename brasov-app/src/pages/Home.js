@@ -9,6 +9,7 @@ import {
   ungarisch,
   französisch,
 } from "../languages/api";
+import HiddenImagePoiana from "../pictures/HiddenImagePoiana.jpg";
 
 const CardWrapper = styled.div`
   width: 90%;
@@ -143,7 +144,7 @@ export default function Home(props) {
           ? hebräisch.Text5
           : "ciao bella"}
       </WelcomeText>
-      <HomePicture src="https://ioanaphotos.files.wordpress.com/2010/09/p1070396.jpg?w=758&h=&zoom=2"></HomePicture>
+      <HomePicture src={HiddenImagePoiana}></HomePicture>
     </CardWrapper>
   );
 }

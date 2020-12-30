@@ -1,5 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import deutschland from "../pictures/Flags/deutschland.png"
+import frankreich from "../pictures/Flags/frankreich.svg"
+import israel from "../pictures/Flags/israel.svg"
+import rumanien from "../pictures/Flags/rumanien.svg"
+import spanien from "../pictures/Flags/spanien.svg"
+import vereinigtestaaten from "../pictures/Flags/vereinigte-staaten.svg"
+import ungarn from "../pictures/Flags/ungarn.svg"
 
 function Header({language, visible}) {
   const Title = styled.header`
@@ -48,19 +55,19 @@ function Header({language, visible}) {
     <Title>
       <Headline>Ferienwohnung Kronstadt</Headline>
       {language === "deutsch" ? (
-        <CurrentFlag src="https://cdn.countryflags.com/thumbs/germany/flag-round-250.png"></CurrentFlag>
+        <CurrentFlag src={deutschland}></CurrentFlag>
       ) : language === "englisch" ? (
-        <CurrentFlag src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png"></CurrentFlag>
+        <CurrentFlag src={vereinigtestaaten}></CurrentFlag>
       ) : language === "rumänisch" ? (
-        <CurrentFlag src="https://cdn.countryflags.com/thumbs/romania/flag-button-round-250.png"></CurrentFlag>
+        <CurrentFlag src={rumanien}></CurrentFlag>
       ) : language === "spanisch" ? (
-        <CurrentFlag src="https://cdn.countryflags.com/thumbs/spain/flag-button-round-250.png"></CurrentFlag>
+        <CurrentFlag src={spanien}></CurrentFlag>
       ) : language === "ungarisch" ? (
-        <CurrentFlag src="https://cdn.countryflags.com/thumbs/hungary/flag-button-round-250.png"></CurrentFlag>
+        <CurrentFlag src={ungarn}></CurrentFlag>
       ) : language === "französisch" ? (
-        <CurrentFlag src="https://cdn.countryflags.com/thumbs/france/flag-3d-round-250.png"></CurrentFlag>
+        <CurrentFlag src={frankreich}></CurrentFlag>
       ) : (
-        <CurrentFlag src="https://cdn.countryflags.com/thumbs/israel/flag-3d-round-250.png"></CurrentFlag>
+        <CurrentFlag src={israel}></CurrentFlag>
       )}
     </Title>
   );

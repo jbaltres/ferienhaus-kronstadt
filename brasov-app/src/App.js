@@ -9,6 +9,13 @@ import Gallerie from "./pages/Gallerie";
 import MainImage from "./components/MainImage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import deutschland from "./pictures/Flags/deutschland.png"
+import frankreich from "./pictures/Flags/frankreich.svg"
+import israel from "./pictures/Flags/israel.svg"
+import rumanien from "./pictures/Flags/rumanien.svg"
+import spanien from "./pictures/Flags/spanien.svg"
+import vereinigtestaaten from "./pictures/Flags/vereinigte-staaten.svg"
+import ungarn from "./pictures/Flags/ungarn.svg"
 
 
 function App() {
@@ -27,6 +34,10 @@ function App() {
     top:55px;
     z-index:999;
     }
+  `;
+
+  const Freepik = styled.div`
+  font-size:0.3em;
   `;
 
   const Flag = styled.img`
@@ -123,38 +134,38 @@ display: flex;
           delaytime="0.1s"
           duration="1s"
           onClick={() => setlanguage("deutsch")}
-          src="https://cdn.countryflags.com/thumbs/germany/flag-round-250.png"
+          src={deutschland}
         ></Flag>
         <Flag
           delaytime="0.3s"
           onClick={() => setlanguage("rumänisch")}
-          src="https://cdn.countryflags.com/thumbs/romania/flag-button-round-250.png"
+          src={rumanien}
         ></Flag>
         <Flag
           delaytime="0.5s"
           duration="1.5s"
           onClick={() => setlanguage("englisch")}
-          src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png"
+          src={vereinigtestaaten}
         ></Flag>
         <Flag
           onClick={() => setlanguage("spanisch")}
-          src="https://cdn.countryflags.com/thumbs/spain/flag-button-round-250.png"
+          src={spanien}
         ></Flag>
         <Flag
           onClick={() => setlanguage("ungarisch")}
-          src="https://cdn.countryflags.com/thumbs/hungary/flag-button-round-250.png"
+          src={ungarn}
         ></Flag>
         <Flag
           delaytime="0.3s"
           duration="1.5s"
           onClick={() => setlanguage("französisch")}
-          src="https://cdn.countryflags.com/thumbs/france/flag-3d-round-250.png"
+          src={frankreich}
         ></Flag>
         <Flag
           delaytime="0.25s"
           duration=".5s"
           onClick={() => setlanguage("hebräisch")}
-          src="https://cdn.countryflags.com/thumbs/israel/flag-3d-round-250.png"
+          src={israel}
         ></Flag>
       </Flagwrapper>
       <MainImage></MainImage>
@@ -172,6 +183,7 @@ display: flex;
           <Preise language={language} />
         </Route>
         <Route path="/gallery" component={Gallerie} />
+        <Freepik>Icons erstellt von <a href="https://www.flaticon.com/de/autoren/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></Freepik>
          <FooterWrapper>
         <Footer /> 
       </FooterWrapper>

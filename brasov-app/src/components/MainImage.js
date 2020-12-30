@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import RathausMainImage from "../pictures/RathausMainImage.jpg";
+import MainImageStrassenfest from "../pictures/MainImageStrassenfest.jpg";
 
 const HeaderContainer = styled.div`
   width: 100%;
@@ -39,11 +41,11 @@ function MainImage() {
   return (
     <HeaderContainer>
       <HeadImage
-        src="https://urlaub-in-rumänien.de/wp-content/uploads/2017/02/3240px-Brasov_Piata_Sfatului.jpg"
+        src={RathausMainImage}
         alt="Pic1"
       />
       <HeadImage2
-        src="https://s.inyourpocket.com/img/figure/2015-04/dreamstime_xxl_18728583.jpg"
+        src={MainImageStrassenfest}
         alt="Pic2"
       />
     </HeaderContainer>
