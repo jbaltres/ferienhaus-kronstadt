@@ -8,8 +8,7 @@ const QuaderBox = styled.div`
 `;
 
 const Quader = styled.img`
-  width: 60%;
-  height: 150px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
